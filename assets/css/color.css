@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'khand Bold';
+    src: url('./fuente/BebasNeue-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Libre Franklin';
+    src: url('./fuente/libre-franklin-regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Libre Franklin Bold';
+    src: url('./fuente/libre-franklin.bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+:root {
+    --Titulo: #f95609;
+    --Subtitulo: #1860ef;
+    --texto: #000000;
+    --bntColor: #ffffff;
+  }
+  

@@ -1,0 +1,325 @@
+body {
+  background: linear-gradient(to right, #d3d3d3, #e0e0e0, #d3d3d3);
+  height: 100vh; /* Abarca toda la altura de la pantalla */
+  margin: 0;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columnas */
+  gap: 20px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-grid-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  
+}
+
+.custom-grid-item:hover {
+  transform: scale(1.05);
+}
+
+.custom-grid-item img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+.custom-grid-item span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+}
+
+/* Modal */
+.custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000cc;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+
+
+/* Estilos ficha */
+.ficha {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.revision {
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.tabla-principal,
+.caracteristicas {
+  margin-top: 10px;
+  border: 1px solid #000;
+}
+
+.tabla-principal .fila,
+.caracteristicas .fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.caracteristicas h2 {
+  background-color: #e0e0e0;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.columna {
+  width: 32%;
+}
+
+.columna h3 {
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.columna img {
+  max-width: 100%;
+  /* Responsivo */
+  max-height: 150px;
+  /* Altura máxima */
+  width: auto;
+  /* Mantiene proporción */
+  height: auto;
+  /* Escala de forma natural */
+  border: 1px solid #000;
+  display: block;
+  /* Centrar visualmente con margin auto */
+  margin: 0 auto;
+}
+
+.funcion,
+.observaciones {
+  border-top: 2px solid #000;
+  padding: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+p,
+ul li {
+  font-size: 14px;
+  line-height: 24px;  
+}
+
+/* Estilo Responsivo */
+@media (max-width: 1024px) {
+  /* Dispositivos de tablet */
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para tablet */
+  }
+
+  .columna {
+    width: 48%; /* Asegura que las columnas sean flexibles en tablet */
+  }
+
+  .custom-grid-item img {
+    max-width: 180px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 22px; /* Reduce el tamaño del título en tablets */
+  }
+
+  .custom-grid-item span {
+    font-size: 14px; /* Ajusta el tamaño del texto */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Dispositivos de móviles grandes */
+  .custom-grid {
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles grandes */
+  }
+
+  .columna {
+    width: 100%; /* Asegura que las columnas se apilen verticalmente */
+  }
+
+  .custom-grid-item img {
+    max-width: 160px; /* Reducción en el tamaño de las imágenes */
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 20px; /* Reducción del tamaño del texto */
+  }
+
+  .custom-grid-item span {
+    font-size: 14px; /* Ajuste de texto */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Dispositivos móviles pequeños */
+  .ficha {
+
+      width: 90%;/* Mantén el padding para espacio interno */
+      margin-top: 150px; /* Mantén esta separación superior */
+      text-align: left; /* Alinea todo el contenido a la izquierda */
+      margin-left: -100px;
+    
+  }
+
+  .columna img {
+    max-width: 100%;
+    max-height: 120px; /* Ajusta la imagen */
+  }
+
+  .custom-grid-item img {
+    max-width: 140px; /* Ajuste en las imágenes para móviles pequeños */
+  }
+
+  .header h1 {
+    font-size: 18px; /* Ajuste de tamaño en el título */
+  }
+
+  .custom-grid-item span {
+    font-size: 12px; /* Ajuste en el texto */
+  }
+}
+/*modo responsivo*/
+/* Estilo Responsivo */
+@media (max-width: 1024px) {
+  /* Dispositivos de tablet */
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para tablet */
+  }
+
+  .custom-grid-item img {
+    max-width: 180px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 22px; /* Reduce el tamaño del título en tablets */
+  }
+
+  .custom-grid-item span {
+    font-size: 14px; /* Ajusta el tamaño del texto */
+  }
+
+  .columna {
+    width: 48%; /* Asegura que las columnas sean flexibles en tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Dispositivos de móviles grandes */
+  .custom-grid {
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles grandes */
+  }
+
+  .custom-grid-item img {
+    max-width: 160px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 20px; /* Reduce el tamaño del título */
+  }
+
+  .custom-grid-item span {
+    font-size: 13px; /* Ajusta el tamaño del texto */
+  }
+
+  .columna {
+    width: 100%; /* Asegura que las columnas se apilen verticalmente */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Dispositivos móviles pequeños */
+  .custom-grid {
+    padding: 10px; /* Reduce el padding general */
+  }
+
+  .custom-grid-item {
+    margin-bottom: 10px; /* Añade separación entre los elementos */
+  }
+
+  .custom-grid-item img {
+    max-width: 140px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 18px; /* Reduce el tamaño del título */
+  }
+
+  .custom-grid-item span {
+    font-size: 12px; /* Reduce el tamaño del texto */
+  }
+
+  .ficha {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Ajusta el padding en móviles */
+  }
+
+  .columna img {
+    max-width: 100%; /* Asegura que la imagen se adapta */
+    max-height: 120px; /* Limita la altura */
+  }
+}

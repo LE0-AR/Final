@@ -1,0 +1,246 @@
+/* Reset básico */
+:root {
+    --Titulo: #f95609;
+    --Subtitulo: #1860ef;
+    --ColorNegro: #000000;
+    --bntColor: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body, html {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+
+  
+  /* VIDEO DE FONDO */
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    margin-top: 180px;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 50%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3d3c3cb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .overlay h1 {
+    color: var(--bntColor);
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+  }
+  
+  /* SECCIÓN PRINCIPAL */
+  .section {
+    margin: 80px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* CONTENEDOR DEL TEXTO */
+  .Torre {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  /* TÍTULO */
+  .title {
+    color: var(--Titulo);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin: 25px 0;
+    font-family: "Bebas Neue", serif;
+  }
+  
+  /* TEXTO */
+  .text {
+    margin: 25px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: justify;
+    font-family: "Libre Franklin", serif;
+  }
+  
+  
+  /* CONTENEDOR DE IMAGEN */
+  .image-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      text-align: center; 
+  }
+  .image {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  /* RESPONSIVIDAD */
+  @media screen and (max-width: 768px) {
+    .section {
+      margin: 40px 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+    .Torre {
+      padding-right: 0;
+    }
+    .image-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  /*Cinta*/
+  
+  .Cinta {
+    background-color: var(--Titulo);
+    color: var(--ColorNegro);
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    width: 55%;
+    margin: 0 -100px;
+    position: relative;
+    text-align: center;
+    
+  }
+  
+  .Cinta h2 {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+  }
+  
+  .Cinta::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-color: var(--bntColor);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    border: none;
+  }
+  /*Buton*/
+  .center{
+    margin:  25px 0;
+    line-height: 1.5;
+  }
+  
+  .cotizas {
+    display: inline-block;
+    background-color: var(--ColorNegro);
+    color: var(--bntColor);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    transform: skewX(-15deg);
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border: 2px solid var(--ColorNegro);
+
+  }
+  
+  .cotizas::before,
+  .cotizas::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--ColorNegro);
+    transform: skewY(-45deg);
+  }
+  
+  .cotizas::before {
+    left: -2px;
+  }
+  
+  .cotizas::after {
+    right: -2px;
+  }
+  
+  .cotizas p {
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transform: skewX(15deg);
+    color: var(--texto);
+    margin: 0;
+    line-height: 1.5;
+    font-family: "Libre Franklin", serif;
+  }
+  
+  .cotizas:hover {
+    background-color: var(--bntColor);
+    color: var(--ColorNegro);
+    border: 2px solid var(--ColorNegro);
+    text-decoration: none;
+  }
+  /*Documento */
+  .grid {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; /*Cambiar*/
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .item {
+    text-align: center;
+    flex: 1 1 22%;
+    max-width: 22%;
+    box-sizing: border-box;
+  }
+  .item img {
+    width: 267px;
+    height: 255px;
+  }
+  .description {
+    font-size: 32px;  
+    font-family: "Bebas Neue", serif;
+  }

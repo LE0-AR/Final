@@ -1,0 +1,117 @@
+/* Reset básico */
+:root {
+  --Titulo: #f95609;
+  --Subtitulo: #1860ef;
+  --ColorNegro: #000000;
+  --bntColor: #ffffff;
+}
+/* Línea final */
+#linea-final {
+  width: 100%;
+  height: 10px;
+  margin: 20px auto;
+}
+
+.SectoresLinea {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+.section {
+  margin: 80px 150px;
+}
+.inicio {
+  margin-top: 280px;
+  align-items: center;
+  text-align: center;
+}
+.titulo {
+  font-family: "Bebas Neue", serif;
+  padding: 25px;
+  font-size: 48px;
+  color: var(--Titulo);
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.descripcion {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  max-width: 900px;
+  line-height: 1.5;
+  padding: 25px;
+  color: var(--ColorNegro);
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  text-align: justify;
+  font-weight: normal;
+}
+
+/*Mision*/
+
+.seccion-identidad {
+  width: auto;
+  margin: 80px 150px; /* Aumenta la separación con otros elementos */
+  padding: 40px; /* Agrega espacio interno */
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-identidad {
+  color: var(--Titulo);
+  font-size: 40px;
+  text-align: start;
+  margin-bottom: 40px; /* Separa el título del contenido */
+  font-family: "Bebas Neue", serif;
+}
+
+.contenedor-mision-vision-valores {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px; /* Espaciado entre los elementos */
+  margin-top: 20px;
+}
+
+.bloque-mision,
+.bloque-vision,
+.bloque-valores {
+  background-color: #eeeeee;
+  padding: 30px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #0000001a;
+  display: flex;
+  flex-direction: column; /* Alinea en columna */
+  align-items: center; /* Centra los íconos horizontalmente */
+  text-align: center; /* Asegura que el texto también esté centrado */
+}
+
+.icono-mision,
+.icono-vision,
+.icono-valores {
+  width: 100px;
+  height: 100px;
+}
+
+.titulo-mision,
+.titulo-vision,
+.titulo-valores {
+  color: var(--Titulo);
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+  font-family: "Bebas Neue", serif;
+}
+
+.texto-mision,
+.texto-vision,
+.texto-valores {
+  font-size: 16px;
+  color: var(--ColorNegro);
+  line-height: 1.5; /* Mejora la legibilidad */
+  font-family: "Libre Franklin", sans-serif;
+  text-align: justify;
+}

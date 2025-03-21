@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  
+  background-color: #F0EEF5;
+}
+.productos-main{
+  margin-top: 200px;
+}
+.productos-main,
+.product-list,
+.area {
+  scroll-margin-top: 200px; /* Ajusta según la altura del header */
+}
+
+:target {
+  scroll-margin-top: 200px; /* Ajusta el valor al alto de tu encabezado */
+}
+
+.product-list {
+  flex-grow: 1;
+  padding: 20px; 
+  margin-top: 15px;
+  margin-left: 50px;
+  width: 1000px;
+  background-color: #ffffff;
+}
+.product-list h2 {
+  font-size: 20px; 
+  font-weight: bold;
+  text-align: center; /* Centrar el texto */
+  padding: 10px 0; /* Espacio interno superior e inferior */
+  margin: 20px 0; /* Espacio superior e inferior externo */
+}
+
+.product-item {
+  border: 0.01px solid black; 
+  background-color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.product-item img{
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  margin-top: auto;
+  margin-right: 10px;
+}
+
+.product-item div {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.product-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.product-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.product-item .btnInfo {
+  background-color: #f95609;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.product-item .btnInfo:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.details {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 10;
+}
+
+.details.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.product-item {
+  position: relative; /* Asegura que el contenedor pueda recibir el botón posicionado */
+  padding: 10px; /* Espacio entre el borde del contenedor y el botón */
+}
+
+.product-item .button {  
+  background-color: #f95609;
+  color: white;
+  border: none;
+  padding: 10px;
+  left: -50px; /* Aleja el botón del borde del contenedor */
+  cursor: pointer;
+}
+
+.product-item .button:hover {
+  background-color: #eb5008;
+  color: #fff;
+}
+
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  width: 70px;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  right: -5px;
+border-radius: 25%;
+}
+
+
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-details img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  top: auto;
+}
+
+.product-details h2 {
+  margin-bottom: 20px;
+}
+
+.header-space {
+  height: 20px; /* Ajustar basado en la altura del encabezado existente */
+}
+
+/*seccion desoligue */
+
+.product-details-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wrapper {
+  max-width: 850px;
+  margin: 0% auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 20px;
+  margin-left: 0px auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.product-content {
+  padding: 2rem 1rem;
+  flex: 1;
+}
+.product-info{
+  padding: 32px  16px;
+  flex: 1;
+}
+.product-title {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #12263a;
+  margin: 1rem 0;
+  padding-bottom: 16px;
+}
+
+
+.product-detail h2 {
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 8px;
+}
+
+.product-detail p {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+}
+
+.product-detail ul {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.product-detail ul li {
+  margin: 0;
+  list-style: none;
+  background-size: 18px;
+  padding-left: 1.7rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.product-detail ul li span {
+  font-weight: 400;
+}
+
+.area {
+  width: 100%;
+  padding: 0px;
+  margin-top: -45px;
+  background-color: #ffffff;
+  border: 1px solid #000000; 
+}
+
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.profile:last-child {
+  border-bottom: none;
+}
+
+.profile-info {
+  max-width: 650px;
+  margin-left: 300px;
+  
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  margin-right:0px;
+}
+
+
+.profile-info p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+  text-align: justify;
+}
+.profile img{
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  margin-left: 300px;
+}
+/*Style sub menu*/
+.main-container {
+  display: flex;
+  margin-left: 280px;
+}
+
+.categories {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 20%;
+  height: 300px;
+  margin-top: 50px;
+  outline: 1px solid #000000; 
+}
+
+
+.categories h2 {
+  color: #a03c11; 
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.category-list h3 {
+  color: #4a4a4a;
+  font-size: 14px;
+  left: 0px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.category-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list > ul > li {
+  position: relative; 
+}
+
+.category-list li {
+  margin-bottom: 8px;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #333030;
+  font-size: 14px;
+  padding: 10%;
+}
+
+.category-list a:hover {
+  text-decoration: underline;
+}
+
+.submenu {
+  display: none;
+  position: absolute; 
+  left: 120%; 
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  width: 100%; /* Ancho del submenú al 100% */
+  max-width: 200px; /* Máximo ancho para evitar que el submenú se extienda demasiado */
+  min-width: 100px; /* Mínimo ancho para evitar que el submenú sea demasiado estrecho */
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.category-list li.active > .submenu {
+  display: block;
+}
+
+/*responsivo*/
+
+@media (max-width: 1200px) {
+  .product-list {
+    width: 100%; 
+    margin-left: 0;
+  }
+
+  .product-item { 
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .categories {
+    width: 100%; 
+    margin-left: 0;
+    height: auto;
+  }
+  .profile {
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+
+  .profile-info {
+    padding: 5px;
+    margin-left: -10px; 
+    max-width: 100%;
+  }
+
+  .profile img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .main-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .categories {
+    height: auto; 
+  }
+
+  .header-space {
+    height: 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    padding: 5px;
+  }
+
+  .product-item h3 {
+    font-size: 0.9rem;
+  }
+
+  .product-item p {
+    font-size: 12px;
+  }
+
+  .product-item .btnInfo {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .categories h2 {
+    font-size: 14px;
+  }
+
+  .category-list a {
+    font-size: 12px;
+    padding: 5%;
+  }
+
+  .profile-info h2 {
+    font-size: 16px;
+  }
+
+  .profile-info p {
+    font-size: 13px;
+  }
+}
+
+/*Style barra de busqueda */
+/* Clase para ocultar elementos */
+.hidden {
+  visibility: hidden; /* O usa opacity: 0 */
+  pointer-events: none; /* Desactiva los eventos de clic para los elementos ocultos */
+}
+
+/* Clase para mostrar elementos */
+.visible {
+  visibility: visible; /* O usa opacity: 1 */
+  pointer-events: auto; /* Restaura la interacción con los elementos visibles */
+}

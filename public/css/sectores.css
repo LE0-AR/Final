@@ -1,0 +1,119 @@
+/* Reset básico */
+:root {
+    --Titulo: #f95609;
+    --Subtitulo: #1860ef;
+    --ColorNegro: #000000;
+    --bntColor: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .SistemaTierra {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.content {
+    width: 50%;
+    max-width: 800px; /* Evita que se haga demasiado grande */
+    margin: 0 auto; /* Centra el bloque */
+    margin-top: -40%;
+}
+
+  
+  .TituloSitema {
+    font-size: 48px;
+    color: var(--ColorNegro);
+    margin-bottom: 25px;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+  }
+  
+  .paragraph {
+    font-size: 16px;
+    color: var(--ColorNegro);
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: justify;
+    font-family: "Libre Franklin", serif;
+  }
+  .imagen{
+    width: 100%;
+    height: auto;
+  }
+
+.productos{
+    margin: 0px 150px;
+   
+}
+  .titulo {
+    color: var(--Subtitulo);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", serif;
+
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  
+  .producto {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+    background: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    gap: 10px;
+  }
+  
+  .producto img {
+    width: 170px;
+    height: 270px;
+    padding: 0px;
+  
+  }
+  
+  .producto p {
+    color: var(--Titulo);
+    font-size: 36px;
+    margin: 0;
+    font-family: "Bebas Neue", serif;
+   
+    text-transform: uppercase;
+  }
+  /*zomm*/
+  .producto a {
+    text-decoration: none !important;
+    color: inherit; /* Asegura que el color no cambie */
+  }
+  
+  .producto a:hover, 
+  .producto a:focus, 
+  .producto a:visited {
+    text-decoration: none !important;
+  }
+  
