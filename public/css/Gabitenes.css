@@ -5,6 +5,13 @@
   --bntColor: #ffffff;
   --Subtitle: #444;
 }
+header  html{
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 300px; /* Altura del header */
+  
+}
 body {
   margin: 0;
   padding: 0;
@@ -15,15 +22,17 @@ body {
   box-sizing: border-box;
 }
 .section-main{
-  margin: 230px 150px;
+  margin: 300px 150px;
 }
 
 .breadcrumb {
-  margin: 40px 0;
+
   font-size: 16px;
   color: var(--ColorNegro);
   font-family: "Libre Franklin", serif;
   font-weight: bold;
+  position: absolute;
+  margin-top: -25px;
 }
 .breadcrumb a {
   text-decoration: none;
@@ -80,6 +89,7 @@ body {
 }
 
 .product-list {
+ 
   display: hidden;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -177,3 +187,6 @@ body {
   background-color: var(--Subtitulo);
   height: 194px;
 }
+
+/*Productos*/
+

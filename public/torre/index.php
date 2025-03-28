@@ -183,7 +183,7 @@
 		<section class="productos">
 			<h2 class="titulo">NUESTROS PRODUCTOS y servicios</h2>
 			<div class="grid">
-				<a href="../../public/products/Torre/index.php#Seccion" >
+				<a href="../../public/products/Torre/index.php#Secciones" >
 					<div class="producto">
 						<img src="../../assets/img/iconosProductos/torres/iconTorre/accesorios.png" alt="Secciones para torre">
 						<p>Secciones para torre</p>

@@ -10,7 +10,7 @@ $sql = "SELECT * FROM productos WHERE estado = 'Activo'";
 $result = $connect->query($sql);
 
 // Definir la URL base para las imágenes y archivos
-$base_url = "http://localhost/transformetal/app/app/";
+$base_url = "http://localhost/transformetal/app/app/app/";
 ?>
 
 

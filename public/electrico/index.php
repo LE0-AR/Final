@@ -323,10 +323,10 @@
 			<div class="content">
 				<h1 class="TituloSitema">Planta Externa y electricidad </h1>
 				<p class="paragraph">
-					En Transformetal, ofrecemos productos y servicios de metalmecánica diseñados para garantizar precisión, calidad y eficiencia 
-					en el sector eléctrico. Fabricamos componentes metálicos de alta calidad, como soportes, gabinetes y estructuras, adaptados 
-					a las necesidades específicas de cada proyecto. Incorporamos tecnología avanzada en nuestros procesos para asegurar innovación 
-					y seguridad en todas nuestras soluciones, respaldados por un equipo técnico especializado que brinda asesoría personalizada en 
+					En Transformetal, ofrecemos productos y servicios de metalmecánica diseñados para garantizar precisión, calidad y eficiencia
+					en el sector eléctrico. Fabricamos componentes metálicos de alta calidad, como soportes, gabinetes y estructuras, adaptados
+					a las necesidades específicas de cada proyecto. Incorporamos tecnología avanzada en nuestros procesos para asegurar innovación
+					y seguridad en todas nuestras soluciones, respaldados por un equipo técnico especializado que brinda asesoría personalizada en
 					cada etapa. Con Transformetal, su infraestructura eléctrica está en las mejores manos.
 
 				</p>
@@ -337,29 +337,25 @@
 		<section class="productos">
 			<h2 class="titulo">NUESTROS PRODUCTOS</h2>
 			<div class="grid">
-				
+				<a href="../../public/products/Electricidad/index.php#gabinetes">
 					<div class="producto">
 						<img src="../../assets/img/iconosProductos/Telcos/gabinetes.png" alt="Gabinetes">
-						<a href="../../public/products/Electricidad/index.php" >
-							<p class="produc">GABINETES</p>
-						</a>
+						<p class="produc">GABINETES</p>
 					</div>
-					<a href="../../public/products/Telcos/" >
+				</a>
+				<a href="../../public/products/Electricidad/index.php#cajas">
 					<div class="producto">
 						<img src="../../assets/img/iconosProductos/electricidad/caja.png" alt="Gabinetes">
-					
-							<p class="produc">CAJAS</p>
-						
+						<p class="produc">CAJAS</p>
 					</div>
-					</a>
+				</a>
+				<a href="../../public/products/Electricidad/index.php#soportes_herrajes">
 					<div class="producto">
 						<img src="../../assets/img/iconosProductos/electricidad/herraje.png" alt="Gabinetes">
-						<a href="../../public/products/Telcos/" >
-							<p class="produc">Soportes y Herrajes</p>
-						</a>
+						<p class="produc">Soportes y Herrajes</p>
 					</div>
-			
-			
+				</a>
+
 			</div>
 		</section>
 

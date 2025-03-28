@@ -58,18 +58,22 @@ if (isset($_GET['id'])) {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title><?php echo htmlspecialchars($producto['nombre']); ?> - TRANSFORMETAL</title>
             <link rel="stylesheet" href="../../css/DetalleProdcutos.css">
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="../../../assets/css/style.css">
+            <link rel="stylesheet" href="../../assets/css/chatbot.css">
+            <link rel="stylesheet" href="../../../assets/css/footer.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
             <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-            <link rel="icon" type="image/png" href="../../../assets/img/isotipo.png">
+            <link rel="icon" type="image/png" href="../../assets/img/isotipo.png">
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-            <link rel="stylesheet" href="../../../assets/css/style.css">
         </head>
-
+<style>
+   
+</style>
         <body>
 
             <!--Header Inicio-->|
@@ -228,10 +232,13 @@ if (isset($_GET['id'])) {
                         <h2><?php echo htmlspecialchars($producto['nombre']); ?></h2>
                         <p><?php echo nl2br(htmlspecialchars($producto['descripcion'])); ?></p>
                         <?php if (!empty($producto['ficha_tecnica'])): ?>
-                            <a href="<?php echo $base_url; ?>Control/<?php echo htmlspecialchars($producto['ficha_tecnica']); ?>" class="btn" target="_blank">
-                                Ver ficha
-                            </a>
+                            <div class="center">
+                                <a href="<?php echo $base_url; ?>Control/<?php echo htmlspecialchars($producto['ficha_tecnica']); ?>"
+                                    class="cotizas" target="_blank">Ver Ficha
+                                </a>
+                            </div>
                         <?php endif; ?>
+
                     </div>
                 </div>
 
@@ -281,6 +288,61 @@ if (isset($_GET['id'])) {
                     element.classList.add('active');
                 }
             </script>
+            <div id="loader">
+                <div class="spinner"></div>
+            </div>
+            <div id="espacio"></div>
+            <footer class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="../../../assets/img/Logo_Azul.png" alt="Transformetal Logo">
+                    </div>
+                    <p class="footer-description">
+                        Transformetal es una empresa líder en metalmecánica, especializada en la transformación y
+                        fabricación de productos metálicos de alta calidad.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#" class="social-icon facebook" style=" background: url('../../../assets/img/icon/footer/fb.png') no-repeat center/cover;"></a>
+                        <a href="#" class="social-icon whatsapp" style=" background: url('../../../assets/img/icon/footer/wsp.png') no-repeat center/cover;"></a>
+                        <a href="#" class="social-icon instagram" style=" background: url('../../../assets/img/icon/footer/ig.png') no-repeat center/cover;"></a>
+                        <a href="#" class="social-icon youtube" style=" background: url('../../../assets/img/icon/footer/yt.png') no-repeat center/cover;"></a>
+                        <a href="tel:37673973" class="contact-icon phone">3767-3973 / 5695-2444</a>
+                        <a href="mailto:contacto@transformetalgt.com" class="contact-icon email">contacto@transformetalgt.com</a>
+                    </div>
+                </div>
+                <style>
+                    .contact-icon.phone::before {
+                        content: "";
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url('../../../assets/img/icon/footer/cel.png');
+                        background-size: cover;
+                        margin-right: 5px;
+                    }
+
+                    .contact-icon.email::before {
+                        content: "";
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url('../../../assets/img/icon/footer/email.png');
+                        background-size: cover;
+                        margin-right: 5px;
+                    }
+                </style>
+                <div class="footer-bottom">
+                    <p>©Transformetal 2025. <a href="" class="privacy-link">Todos los derechos reservados</a></p>
+                    <a href="#" class="privacy-link">Política de privacidad</a>
+                </div>
+            </footer>
+            <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+            <script src="../../../assets/js/menu.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script src="../../../assets/js/chat.js"></script>
+
         </body>
 
         </html>

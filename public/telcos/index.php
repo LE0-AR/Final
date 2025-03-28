@@ -334,38 +334,50 @@
 		<section class="productos">
 			<h2 class="titulo">NUESTROS PRODUCTOS</h2>
 			<div class="grid">
-				
+				<a href="../../public/products/Telcos/index.php#gabinetes">
 					<div class="producto">
 						<img src="../../assets/img/iconosProductos/Telcos/gabinetes.png" alt="Gabinetes">
-						<a href="../../public/products/Telcos/index.php#GABINETES" >
-							<p class="produc">GABINETES</p>
-						</a>
+
+						<p class="produc">GABINETES</p>
+
 					</div>
-			
+				</a>
+				<a href="../../public/products/Telcos/index.php#racks">
 				<div class="producto">
 					<img src="../../assets/img/iconosProductos/Telcos/racks.png" alt="Racks">
 					<p>RACKS</p>
 				</div>
+				</a>
+				<a href="../../public/products/Telcos/index.php#rieles">
 				<div class="producto">
 					<img src="../../assets/img/iconosProductos/Telcos/rieles.png" alt="Rieles">
 					<p>RIELES</p>
 				</div>
+				</a>
+				<a href="../../public/products/Telcos/index.php#escalerillas">
 				<div class="producto">
 					<img src="../../assets/img/iconosProductos/Telcos/escalerillas.png" alt="Escalerillas">
 					<p>ESCALERILLAS</p>
 				</div>
+				</a>
+				<a href="../../public/products/Telcos/index.php#bandejas">
 				<div class="producto">
 					<img src="../../assets/img/iconosProductos/Telcos/bandejas.png" alt="Bandejas">
 					<p>BANDEJAS</p>
 				</div>
+				</a>
+				<a href="../../public/products/Telcos/index.php#planta_externa">
 				<div class="producto">
 					<img src="../../assets/img/iconosProductos/Telcos/planta externa.png" alt="Planta Externa">
 					<p>PLANTA EXTERNA</p>
 				</div>
+				</a>
+				<a href="../../public/products/Telcos/index.php#planta_interna">
 				<div class="producto">
 					<img src="../../assets/img/iconosProductos/Telcos/planta interna.png" alt="Planta Interna">
 					<p>PLANTA INTERNA</p>
 				</div>
+				</a>
 			</div>
 		</section>
 
@@ -381,10 +393,10 @@
 					fabricación de productos metálicos de alta calidad.
 				</p>
 				<div class="footer-icons">
-					<a href="#" class="social-icon facebook" style=" background: url('../../assets/img/icon/footer/fb.png') no-repeat center/cover;"></a>
-					<a href="#" class="social-icon whatsapp" style=" background: url('../../assets/img/icon/footer/wsp.png') no-repeat center/cover;"></a>
-					<a href="#" class="social-icon instagram" style=" background: url('../../assets/img/icon/footer/ig.png') no-repeat center/cover;"></a>
-					<a href="#" class="social-icon youtube" style=" background: url('../../assets/img/icon/footer/yt.png') no-repeat center/cover;"></a>
+					<a href="#" class="social-icon facebook" style=" background: url('../../../assets/img/icon/footer/fb.png') no-repeat center/cover;"></a>
+					<a href="#" class="social-icon whatsapp" style=" background: url('../../../assets/img/icon/footer/wsp.png') no-repeat center/cover;"></a>
+					<a href="#" class="social-icon instagram" style=" background: url('../../../assets/img/icon/footer/ig.png') no-repeat center/cover;"></a>
+					<a href="#" class="social-icon youtube" style=" background: url('../../../assets/img/icon/footer/yt.png') no-repeat center/cover;"></a>
 					<a href="tel:37673973" class="contact-icon phone">3767-3973 / 5695-2444</a>
 					<a href="mailto:contacto@transformetalgt.com" class="contact-icon email">contacto@transformetalgt.com</a>
 				</div>
@@ -395,7 +407,7 @@
 					display: inline-block;
 					width: 40px;
 					height: 40px;
-					background-image: url('../../assets/img/icon/footer/cel.png');
+					background-image: url('../../../assets/img/icon/footer/cel.png');
 					background-size: cover;
 					margin-right: 5px;
 				}
@@ -405,7 +417,7 @@
 					display: inline-block;
 					width: 40px;
 					height: 40px;
-					background-image: url('../../assets/img/icon/footer/email.png');
+					background-image: url('../../../assets/img/icon/footer/email.png');
 					background-size: cover;
 					margin-right: 5px;
 				}
