@@ -27,11 +27,11 @@
 	</style>
 
 	<body>
-	
+
 		<!--Header Inicio-->|
 		<header id="header">
 
-			<div class="container-hero  position: fixed;">
+			<div class="container-hero">
 				<div class="container hero">
 					<div class="customer-support">
 						<i class=""></i>
@@ -66,59 +66,50 @@
 							<a href="#" id="productos-link" class="TituloMenu">Productos</a>
 							<ul class="nav-menu" id="productos-submenu">
 								<li>
-									<a href="#" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
+									<a href="public/products/Telcos/" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
 									<ul class="nav-submenu ">
-										<li><a href="productos.php">Gabinetes</a></li>
-										<li><a href="productos.php#section2">Racks</a></li>
-										<li><a href="productos.php#section9">Bandejas</a></li>
-										<li><a href="productos.php#section3-1">Riel</a></li>
-										<li><a href="productos.php#section4-1">Escalerilla</a></li>
-										<li><a href="productos.php#section85">Planta Externa</a></li>
-										<li><a href="productos.php#section85">Planta Interna</a></li>
-										<li><a href=""></a></li>
+										<li><a href="public/products/Telcos/index.php#gabinetes">Gabinetes</a></li>
+										<li><a href="public/products/Telcos/index.php#racks">Racks</a></li>
+										<li><a href="public/products/Telcos/index.php#bandejas">Bandejas</a></li>
+										<li><a href="public/products/Telcos/index.php#rieles">Riel</a></li>
+										<li><a href="public/products/Telcos/index.php#escalerillas">Escalerilla</a></li>
+										<li><a href="public/products/Telcos/index.php#planta_externa">Planta Externa</a></li>
+										<li><a href="public/products/Telcos/index.php#planta_interna">Planta Interna</a></li>
+								
 									</ul>
 								</li>
 								<li>
 									<a href="#" class="main-category">Planta Externa y Electricidad<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
 									<ul class="nav-submenu plantaExterna">
-										<li><a href="productos.php">Gabinetes</a></li>
-										<li><a href="productos.php#section50">Cajas</a></li>
-										<li><a href="productos.php#section70">Herrajes</a></li>
+										<li><a href="public/products/Electricidad/index.php#gabinetes">Gabinetes</a></li>
+										<li><a href="public/products/Electricidad/index.php#cajas">Cajas</a></li>
+										<li><a href="public/products/Electricidad/index.php#soportes_herrajes">Soportes y Herrajes</a></li>
 									</ul>
 								</li>
 								<li>
 									<a href="#" class="main-category">Exhibición y Almacenes <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
 									<ul class="nav-submenu Almacenes">
-										<li><a href="productos.php#Gondolas">Góndolas </a></li>
-										<li><a href="productos.php#Estanteria">Estanterías </a></li>
-										<li><a href="productos.php#RackIndustrial">Racks Industrial</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#" class="main-category">Arquitectónicos y Panales Decorativos <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-									<ul class="nav-submenu paneles">
-										<li><a href="productos.php#Arquitectonicos">Paneles decorativos</a></li>
-										<li><a href="#"></a></li>
-										<li><a href="#"></a></li>
+										<li><a href="public/products/almacenaje/index.php#Gondolas">Góndolas </a></li>
+										<li><a href="public/products/almacenaje/index.php#estanterias">Estanterías </a></li>
+										<li><a href="public/products/almacenaje/index.php#Rack_Industrial">Racks Industrial</a></li>
 									</ul>
 								</li>
 								<li>
 									<a href="#" class="main-category">Mobiliario Urbano <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-									<ul class="nav-submenu Mobiliario">
-									<li><a href="">Góndolas </a></li>
-										<li><a href="">Estanterías </a></li>
-										<li><a href="">Racks Industrial</a></li>
+									<ul class="nav-submenu paneles">
+										<li><a href="public/products/Mobiliario/index.php#Basureros">Basureros </a></li>
+										<li><a href="public/products/Mobiliario/index.php#Paneles">Paneles decorativos</a></li>
+										<li><a href="public/products/Mobiliario/index.php#Mupis">Mupis </a></li>
 									</ul>
 								</li>
-								
 								<li>
 									<a href="#" class="main-category">Torres <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-									<ul class="nav-submenu TorresIrios">
-										<li><a href="./public/products/Torre/">Torres Arriostradas y Accesorios</a></li>
+									<ul class="nav-submenu Mobiliario">
+										<li><a href="public/products/Torre/index.php#Accesorios">Torres Arriostradas </a></li>
+										<li><a href="public/products/Torre/index.php#Secciones">Accesorios para torres</a></li>
 										<li><a href="./control/">Instalacion de torre arriostrada</a></li>
 										<li><a href="./control/SistemaTierra.php">Sistemas de puesta a tierra</a></li>
 										<li><a href="./control/pararrayos.php">Sistema de pararrayos y baliza </a></li>
-
 									</ul>
 								</li>
 							</ul>
@@ -150,7 +141,7 @@
 						<label for="check" class="close-menu"><i class="fas fa-times"></i></label>
 					</ul>
 					<!-- Barra de búsqueda actualizada -->
-					<form class="search-form" action="busqueda.php" method="get">
+					<form class="search-form" action="./public/products/busqueda.php" method="get">
 						<input type="search" name="query" placeholder="Buscar..." required>
 						<button class="btn-search" type="submit">
 							<i class="fa-solid fa-magnifying-glass"></i>
@@ -211,42 +202,42 @@
 				<div class="producto">
 					<img src="./assets/img/Section2Home/1-microdata.png"" alt=" Microdata Center">
 					<h3>MICRO DATA CENTER</h3>
-					<a href="#" class="VerProduct">
+					<a href="public/products/Telcos/index.php#gabinetes" class="VerProduct">
 						<p>Ver producto</p>
 					</a>
 				</div>
 				<div class="producto">
 					<img src="./assets/img/Section2Home/2-bandeja.png" alt="Bandeja Metálica" id="bandej">
 					<h3>BANDEJA METÁLICA</h3>
-					<a href="#" class="VerProduct">
+					<a href="public/products/Telcos/index.php#bandejas" class="VerProduct">
 						<p>Ver producto</p>
 					</a>
 				</div>
 				<div class="producto">
 					<img src="./assets/img/Section2Home/3-rieles.png" alt="Rieles Metálicos">
 					<h3>RIELES METÁLICOS</h3>
-					<a href="#" class="VerProduct">
+					<a href="public/products/Telcos/index.php#rieles" class="VerProduct">
 						<p>Ver producto</p>
 					</a>
 				</div>
 				<div class="producto">
 					<img src="./assets/img/Section2Home/4-escalerilla.png" alt="Rieles Metálicos">
 					<h3>ESCALERILLAS</h3>
-					<a href="#" class="VerProduct">
+					<a href="public/products/Telcos/index.php#escalerillas" class="VerProduct">
 						<p>Ver producto</p>
 					</a>
 				</div>
 				<div class="producto">
 					<img src="./assets/img/Section2Home/5-caja.png" alt="Rieles Metálicos">
 					<h3>CAJAS METÁLICAS </h3>
-					<a href="#" class="VerProduct">
+					<a href="public/products/Electricidad/index.php#cajas" class="VerProduct">
 						<p>Ver producto</p>
 					</a>
 				</div>
 				<div class="producto">
 					<img src="./assets/img/Section2Home/6-torres.png" alt="Rieles Metálicos">
 					<h3>TORRE ARRIOSTRADA</h3>
-					<a href="#" class="VerProduct">
+					<a href="public/products/Torre/index.php#Secciones" class="VerProduct">
 						<p>Ver producto</p>
 					</a>
 				</div>
@@ -263,7 +254,7 @@
 				<p>
 					Somos una empresa cien por ciento guatemalteca, que fabrica y suministra productos de metalmecánica de alta calidad. Estamos integrados por un gran equipo especializado, que utiliza técnicas basadas en buenas prácticas aplicadas a nivel internacional que permiten precisión, calidad y cumplimiento. Además, contamos con maquinaria a la vanguardia y materia prima de alta calidad que garantiza la satisfacción del cliente.
 				</p>
-				<a href="#" class="VerProduct">
+				<a href="public/Nosotros/" class="VerProduct">
 					<p>Ver producto</p>
 				</a>
 			</div>
@@ -315,14 +306,14 @@
 					<textarea id="proyecto" placeholder="Escriba aquí..."></textarea>
 				</div>
 
-				<a href="#" class="VerProduct">
+				<a  class="VerProduct">
 					<p>Enviar</p>
 				</a>
 			</form>
 		</section>
 		<!--Seccion del form Fin-->
-		
-<!--chatbot Inicio-->
+
+		<!--chatbot Inicio-->
 		<!--chatbot de whatsapp-->
 		<div class="message-wrapper">
 			<div class="message-toggle">
@@ -466,7 +457,7 @@
 		<!-- Chat Bot UI Ends -->
 		<!--Chat FIn-->
 
-<!--Chatbot Fin-->
+		<!--Chatbot Fin-->
 
 		<div id="loader">
 			<div class="spinner"></div>

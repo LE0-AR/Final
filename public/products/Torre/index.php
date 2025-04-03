@@ -1,27 +1,44 @@
 <?php
-include '../../../model/autolad/conexcion.php';
+include '../../../views/inc/conection.php';
 
-// Consulta para Secciones activas
-$querySecciones = "SELECT * FROM productos 
-                   WHERE sector='Torres' 
-                   AND categoria='SECCIONES' 
-                   AND estado='Activo'";
-$resultSecciones = mysqli_query($connect, $querySecciones);
+// Definir categorías y sus propiedades
+$categorias = [
+  'ACCESORIOS' => [
+    'id' => 'Accesorios',
+    'titulo' => 'Accesorios',
+    'descripcion' => 'Descubre nuestra amplia gama de torres ariostradas en Transformetal, diseñadas para cumplir con sus necesidades en
+                      infraestructura de comunicaciones inalámbricas. Con una construcción sólida y estabilizada combinable, nuestras torres
+                      ofrecen resistencia y durabilidad excepcionales, incluso en condiciones climáticas adversas.',
+    'icono' => '../../assets/img/iconosProductos/Telcos/gabinetes.png'
+  ],
+  'SECCIONES' => [
+    'id' => 'Secciones',
+    'titulo' => 'Secciones',
+    'descripcion' => 'Descubre nuestra amplia gama de torres ariostradas en Transformetal, diseñadas para cumplir con sus necesidades en
+                      infraestructura de comunicaciones inalámbricas. Con una construcción sólida y estabilizada combinable, nuestras torres
+                      ofrecen resistencia y durabilidad excepcionales, incluso en condiciones climáticas adversas.',
+    'icono' => '../../assets/img/iconosProductos/Telcos/racks.png'
+  ]
+];
 
-// Consulta para Accesorios activos
-$queryAccesorios = "SELECT * FROM productos 
-                    WHERE sector='Torres' 
-                    AND categoria='ACCESORTIOS' 
-                    AND estado='Activo'";
-$resultAccesorios = mysqli_query($connect, $queryAccesorios);
+// Consultas por categoría
+$resultados = [];
+foreach ($categorias as $categoria => $info) {
+  $query = "SELECT * FROM productos 
+              WHERE sector = 'Torres' 
+              AND categoria = ? 
+              AND estado = 'Activo'";
 
-// Validar si hay resultados
-if (!$resultSecciones || !$resultAccesorios) {
-  die("Error en la consulta: " . mysqli_error($connect));
+  $stmt = mysqli_prepare($connect, $query);
+  if ($stmt) {
+    mysqli_stmt_bind_param($stmt, "s", $categoria);
+    mysqli_stmt_execute($stmt);
+    $resultados[$info['id']] = mysqli_stmt_get_result($stmt);
+  }
 }
+
 $base_url = "http://localhost/transformetal/app/app/";
 ?>
-<!-- Copyright 2024  TRANSFORMETAL-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -42,9 +59,49 @@ $base_url = "http://localhost/transformetal/app/app/";
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="../../css/Gabitenes.css">
 </head>
+<style>
+  .category-nav {
+    display: none;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 
-<body onload="checkHash()">
-  <!--Header Inicio-->|
+  .category-link {
+    padding: 10px 20px;
+    color: var(--ColorNegro);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .category-link:hover,
+  .category-link.active {
+    background: var(--Titulo);
+    color: white;
+  }
+
+  .product-section {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+  }
+
+  .product-section[style*="display: block"] {
+    opacity: 1;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+</style>
+
+<body>
   <header id="header">
 
     <div class="container-hero  position: fixed;">
@@ -57,7 +114,7 @@ $base_url = "http://localhost/transformetal/app/app/";
           </div>
         </div>
         <div class="container-logo">
-          <a href="../../../">
+          <a href="../../">
             <i><img src="../../../assets/img/logot.png" alt="100px" style="width: 500px; height: 100px; "></i>
 
           </a>
@@ -108,13 +165,20 @@ $base_url = "http://localhost/transformetal/app/app/";
                   <li><a href="productos.php#Gondolas">Góndolas </a></li>
                   <li><a href="productos.php#Estanteria">Estanterías </a></li>
                   <li><a href="productos.php#RackIndustrial">Racks Industrial</a></li>
-                  <li><a href="">Paneles decorativos</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="main-category">Arquitectónicos y Panales Decorativos <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
+                <ul class="nav-submenu paneles">
+                  <li><a href="productos.php#Arquitectonicos">Paneles decorativos</a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Mobiliario Urbano <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-                <ul class="nav-submenu paneles">
-                  <li><a href="productos.php#Arquitectonicos">Paneles Basureros</a></li>
+                <ul class="nav-submenu Mobiliario">
+                  <li><a href="productos.php#Mobiliario">Basureros</a></li>
                   <li><a href="#"></a></li>
                   <li><a href="#"></a></li>
                 </ul>
@@ -129,7 +193,6 @@ $base_url = "http://localhost/transformetal/app/app/";
 
                 </ul>
               </li>
-
             </ul>
           </li>
 
@@ -178,126 +241,170 @@ $base_url = "http://localhost/transformetal/app/app/";
     </div>
     <!--menu fin -->
   </header>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
   <div class="section-main">
-    <section class="section">
-      <nav class="breadcrumb" id="breadcrumb">
-        <a href="../../torre/">Torre Arriostrada ></a>
-        <span class="active">Secciones</span>
-      </nav>
 
-      <div class="product-header">
-        <h1 class="title-Product">Torres Arriostradas</h1>
-        <p class="description">
-          Descubre nuestra amplia gama de torres ariostradas en Transformetal, diseñadas para cumplir con sus necesidades en
-          infraestructura de comunicaciones inalámbricas. Con una construcción sólida y estabilizada combinable, nuestras torres
-          ofrecen resistencia y durabilidad excepcionales, incluso en condiciones climáticas adversas.
-        </p>
-      </div>
+    <!-- Navegación de categorías -->
+    <div class="category-nav">
+      <?php foreach ($categorias as $categoria => $info): ?>
+        <a href="#<?php echo $info['id']; ?>"
+          class="category-link"
+          data-category="<?php echo $info['id']; ?>">
+          <?php echo $info['titulo']; ?>
+        </a>
+      <?php endforeach; ?>
+    </div>
 
-      <!-- Sección de Torres -->
-      <section id="Secciones" class="product-list">
-        <?php
-        if (mysqli_num_rows($resultSecciones) > 0) {
-          while ($row = mysqli_fetch_assoc($resultSecciones)) {
-            $hash = md5($row['id'] . 'transformetal');
-        ?>
-            <div class="product-card">
-              <img src="<?php echo $base_url . 'Control/' . htmlspecialchars($row['imagen_principal']); ?>"
-                alt="<?php echo htmlspecialchars($row['nombre']); ?>">
-              <h3><?php echo htmlspecialchars($row['nombre']); ?></h3>
-              <div class="center">
-                <a href="detalle.php?id=<?php echo urlencode($hash); ?>" class="cotizas">
-                  <p>Ver producto</p>
-                </a>
+    <!-- Secciones de productos -->
+    <nav class="breadcrumb">
+      <a href="../../torre/">Torres ></a>
+      <span class="active" id="breadcrumb-text"></span>
+    </nav>
+    <?php foreach ($categorias as $categoria => $info): ?>
+      <section id="<?php echo $info['id']; ?>"
+        class="product-section"
+        style="display: none;">
+
+        <div class="product-header">
+          <h1 class="title-Product"><?php echo $info['titulo']; ?></h1>
+          <p class="description"><?php echo $info['descripcion']; ?></p>
+        </div>
+
+        <div class="product-list">
+          <?php
+          if ($resultados[$info['id']] && mysqli_num_rows($resultados[$info['id']]) > 0):
+            while ($row = mysqli_fetch_assoc($resultados[$info['id']])):
+              $hash = md5($row['id'] . 'transformetal');
+          ?>
+              <div class="product-card">
+                <img src="<?php echo $base_url; ?>Control/<?php echo htmlspecialchars($row['imagen_principal']); ?>"
+                  alt="<?php echo htmlspecialchars($row['nombre']); ?>">
+                <h3><?php echo htmlspecialchars($row['nombre']); ?></h3>
+                <div class="center">
+                  <a href="detalle.php?id=<?php echo urlencode($hash); ?>"
+                    class="cotizas">Ver producto</a>
+                </div>
               </div>
-            </div>
-        <?php
-          }
-        } else {
-          echo '<p class="no-products">No hay secciones disponibles</p>';
-        }
-        ?>
+            <?php
+            endwhile;
+          else:
+            ?>
+            <p class="no-products">No hay productos disponibles</p>
+          <?php endif; ?>
+        </div>
       </section>
-
-      <!-- Sección de Accesorios -->
-      <section id="Accesorios" class="product-list" style="display: none;">
-        <?php
-        if (mysqli_num_rows($resultAccesorios) > 0) {
-          while ($row = mysqli_fetch_assoc($resultAccesorios)) {
-            $hash = md5($row['id'] . 'transformetal');
-        ?>
-            <div class="product-card">
-              <img src="<?php echo $base_url . 'Control/' . htmlspecialchars($row['imagen_principal']); ?>"
-                alt="<?php echo htmlspecialchars($row['nombre']); ?>">
-              <h3><?php echo htmlspecialchars($row['nombre']); ?></h3>
-              <div class="center">
-                <a href="detalle.php?id=<?php echo urlencode($hash); ?>" class="cotizas">
-                  <p>Ver producto</p>
-                </a>
-              </div>
-            </div>
-        <?php
-          }
-        } else {
-          echo '<p class="no-products">No hay accesorios disponibles</p>';
-        }
-        ?>
-      </section>
-    </section>
+    <?php endforeach; ?>
   </div>
-
-
   <div id="loader">
+    <div class="spinner"></div>
   </div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Función para obtener el hash de la URL o el almacenado
-      function getActiveSection() {
-        return window.location.hash.slice(1) ||
-          localStorage.getItem('activeSection') ||
-          'Secciones';
-      }
-
-      // Función para mostrar la sección
-      function mostrarSeccion(seccionId) {
-        // Guardar sección activa
-        localStorage.setItem('activeSection', seccionId);
-
+      function mostrarCategoria(categoriaId) {
         // Ocultar todas las secciones
-        document.querySelectorAll('.product-list').forEach(section => {
+        document.querySelectorAll('.product-section').forEach(section => {
           section.style.display = 'none';
         });
 
-        // Mostrar sección activa
-        const seccionActiva = document.getElementById(seccionId);
-        if (seccionActiva) {
-          seccionActiva.style.display = 'grid';
+        document.querySelectorAll('.category-link').forEach(link => {
+          link.classList.remove('active');
+        });
+
+        // Encontrar la categoría por ID
+        let categoriaEncontrada = null;
+        Object.entries(<?php echo json_encode($categorias); ?>).forEach(([key, value]) => {
+          if (value.id === categoriaId) {
+            categoriaEncontrada = value;
+          }
+        });
+
+        // Mostrar sección seleccionada
+        const seccionActiva = document.getElementById(categoriaId);
+        const linkActivo = document.querySelector(`[data-category="${categoriaId}"]`);
+
+        if (seccionActiva && linkActivo && categoriaEncontrada) {
+          seccionActiva.style.display = 'block';
+          linkActivo.classList.add('active');
 
           // Actualizar breadcrumb y título
-          const breadcrumb = document.querySelector('#breadcrumb .active');
-          const title = document.querySelector('.title-Product');
+          const breadcrumb = document.querySelector('#breadcrumb-text');
+          breadcrumb.textContent = categoriaEncontrada.titulo;
+          document.title = `${categoriaEncontrada.titulo} - TRANSFORMETAL`;
 
-          if (seccionId === 'Accesorios') {
-            breadcrumb.textContent = 'Accesorios';
-            title.textContent = 'Accesorios para Torres';
-          } else {
-            breadcrumb.textContent = 'Secciones';
-            title.textContent = 'Torres Arriostradas';
-          }
+          localStorage.setItem('activeSection', categoriaId);
         }
       }
 
-      // Manejar cambios en el hash
-      window.addEventListener('hashchange', function() {
-        const seccionId = getActiveSection();
-        mostrarSeccion(seccionId);
+      // Manejar hash inicial
+      const hash = window.location.hash.slice(1);
+      const initialCategory = hash || localStorage.getItem('activeSection') || 'gabinetes';
+      mostrarCategoria(initialCategory);
+
+      // Manejar clics en enlaces
+      document.querySelectorAll('.category-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const categoria = this.dataset.category;
+          history.pushState(null, '', `#${categoria}`);
+          mostrarCategoria(categoria);
+        });
       });
 
-      // Mostrar sección inicial
-      mostrarSeccion(getActiveSection());
+      // Manejar cambios en el hash
+      window.addEventListener('hashchange', () => {
+        const categoria = window.location.hash.slice(1) || 'gabinetes';
+        mostrarCategoria(categoria);
+      });
     });
   </script>
+
+  <footer class="footer-container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="../../../assets/img/Logo_Azul.png" alt="Transformetal Logo">
+      </div>
+      <p class="footer-description">
+        Transformetal es una empresa líder en metalmecánica, especializada en la transformación y
+        fabricación de productos metálicos de alta calidad.
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/people/Transformetal/61556439127740/?locale=es_LA" class="social-icon facebook" style=" background: url('../../.../../../assets/img/icon/footer/fb.png') no-repeat center/cover;" target="_blank"></a>
+        <a href="https://api.whatsapp.com/send/?phone=50237673973&type=phone_number&app_absent=0" class="social-icon whatsapp" style=" background: url('../../../assets/img/icon/footer/wsp.png') no-repeat center/cover;" target="_blank"></a>
+        <a href="https://www.instagram.com/transformetalgt/" class="social-icon instagram" style=" background: url('../../../assets/img/icon/footer/ig.png') no-repeat center/cover;" target="_blank"></a>
+        <a href="https://www.youtube.com/@TransformetalGT" class="social-icon youtube" style=" background: url('../../../assets/img/icon/footer/yt.png') no-repeat center/cover;" target="_blank"></a>
+        <a href="tel:37673973" class="contact-icon phone">3767-3973 / 5695-2444</a>
+        <a href="mailto:contacto@transformetalgt.com" class="contact-icon email">contacto@transformetalgt.com</a>
+      </div>
+    </div>
+    <style>
+      .contact-icon.phone::before {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url('../../../assets/img/icon/footer/cel.png');
+        background-size: cover;
+        margin-right: 5px;
+      }
+
+      .contact-icon.email::before {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url('../../../assets/img/icon/footer/email.png');
+        background-size: cover;
+        margin-right: 5px;
+      }
+    </style>
+    <div class="footer-bottom">
+      <p>©Transformetal 2025. <a href="" class="privacy-link">Todos los derechos reservados</a></p>
+      <a href="#" class="privacy-link">Política de privacidad</a>
+    </div>
+  </footer>
+  <script src="../../../assets/js/menu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 
 </html>

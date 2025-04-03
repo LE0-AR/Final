@@ -23,11 +23,10 @@
 
 
 	<body>
-
 		<!--Header Inicio-->|
 		<header id="header">
 
-			<div class="container-hero  position: fixed;">
+			<div class="container-hero ">
 				<div class="container hero">
 					<div class="customer-support">
 						<i class=""></i>
@@ -38,7 +37,7 @@
 					</div>
 					<div class="container-logo">
 						<a href="../../">
-							<i><img src="../../assets/img/logot.png" alt="100px" style="width: 500px; height: 100px; "></i>
+							<i><img src="../../assets/img/logot.png" alt="100px"></i>
 
 						</a>
 					</div>
@@ -62,58 +61,50 @@
 							<a href="#" id="productos-link" class="TituloMenu">Productos</a>
 							<ul class="nav-menu" id="productos-submenu">
 								<li>
-									<a href="#" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
+									<a href="public/products/Telcos/" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
 									<ul class="nav-submenu ">
-										<li><a href="productos.php">Gabinetes</a></li>
-										<li><a href="productos.php#section2">Racks</a></li>
-										<li><a href="productos.php#section9">Bandejas</a></li>
-										<li><a href="productos.php#section3-1">Riel</a></li>
-										<li><a href="productos.php#section4-1">Escalerilla</a></li>
-										<li><a href="productos.php#section85">Planta Externa</a></li>
-										<li><a href="productos.php#section85">Planta Interna</a></li>
-										<li><a href=""></a></li>
+										<li><a href="../../public/products/Telcos/index.php#gabinetes">Gabinetes</a></li>
+										<li><a href="../../public/products/Telcos/index.php#racks">Racks</a></li>
+										<li><a href="../../public/products/Telcos/index.php#bandejas">Bandejas</a></li>
+										<li><a href="../../public/products/Telcos/index.php#rieles">Riel</a></li>
+										<li><a href="../../public/products/Telcos/index.php#escalerillas">Escalerilla</a></li>
+										<li><a href="../../public/products/Telcos/index.php#planta_externa">Planta Externa</a></li>
+										<li><a href="../../public/products/Telcos/index.php#planta_interna">Planta Interna</a></li>
+
 									</ul>
 								</li>
 								<li>
 									<a href="#" class="main-category">Planta Externa y Electricidad<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
 									<ul class="nav-submenu plantaExterna">
-										<li><a href="productos.php">Gabinetes</a></li>
-										<li><a href="productos.php#section50">Cajas</a></li>
-										<li><a href="productos.php#section70">Herrajes</a></li>
+										<li><a href="../../public/products/Electricidad/index.php#gabinetes">Gabinetes</a></li>
+										<li><a href="../../public/products/Electricidad/index.php#cajas">Cajas</a></li>
+										<li><a href="../../public/products/Electricidad/index.php#soportes_herrajes">Soportes y Herrajes</a></li>
 									</ul>
 								</li>
 								<li>
 									<a href="#" class="main-category">Exhibición y Almacenes <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
 									<ul class="nav-submenu Almacenes">
-										<li><a href="productos.php#Gondolas">Góndolas </a></li>
-										<li><a href="productos.php#Estanteria">Estanterías </a></li>
-										<li><a href="productos.php#RackIndustrial">Racks Industrial</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#" class="main-category">Arquitectónicos y Panales Decorativos <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-									<ul class="nav-submenu paneles">
-										<li><a href="productos.php#Arquitectonicos">Paneles decorativos</a></li>
-										<li><a href="#"></a></li>
-										<li><a href="#"></a></li>
+										<li><a href="../../public/products/almacenaje/index.php#Gondolas">Góndolas </a></li>
+										<li><a href="../../public/products/almacenaje/index.php#estanterias">Estanterías </a></li>
+										<li><a href="../../public/products/almacenaje/index.php#Rack_Industrial">Racks Industrial</a></li>
 									</ul>
 								</li>
 								<li>
 									<a href="#" class="main-category">Mobiliario Urbano <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-									<ul class="nav-submenu Mobiliario">
-										<li><a href="productos.php#Mobiliario">Basureros</a></li>
-										<li><a href="#"></a></li>
-										<li><a href="#"></a></li>
+									<ul class="nav-submenu paneles">
+										<li><a href="../../public/products/Mobiliario/index.php#Basureros">Basureros </a></li>
+										<li><a href="../../public/products/Mobiliario/index.php#Paneles">Paneles decorativos</a></li>
+										<li><a href="../../public/products/Mobiliario/index.php#Mupis">Mupis </a></li>
 									</ul>
 								</li>
 								<li>
 									<a href="#" class="main-category">Torres <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-									<ul class="nav-submenu TorresIrios">
-										<li><a href="./productos.php#section25">Torres Arriostradas y Accesorios</a></li>
-										<li><a href="./control/">Instalacion de torre arriostrada</a></li>
-										<li><a href="./control/SistemaTierra.php">Sistemas de puesta a tierra</a></li>
-										<li><a href="./control/pararrayos.php">Sistema de pararrayos y baliza </a></li>
-
+									<ul class="nav-submenu Mobiliario">
+										<li><a href="../../public/products/Torre/index.php#Secciones">Torres Arriostradas</a></li>
+										<li><a href="../../public/products/Torre/index.php#Accesorios">Accesorios para torres</a></li>
+										<li><a href="../../control/">Instalacion de torre arriostrada</a></li>
+										<li><a href="../../control/SistemaTierra.php">Sistemas de puesta a tierra</a></li>
+										<li><a href="../../control/pararrayos.php">Sistema de pararrayos y baliza </a></li>
 									</ul>
 								</li>
 							</ul>
@@ -126,32 +117,26 @@
 						<li id="nav2">
 							<a href="#" id="industrias-link" class="TituloMenu">Sectores</a>
 							<ul class="nav-menu" id="industrias-submenu">
-								<li><a href="industrias.php#telecom">Telecomunicaciones</a></li>
-								<li><a href="industrias.php#Electrico">Electricidad</a></li>
-								<li><a href="industrias.php#Mobiliario">Mobiliario Urbano</a></li>
-								<li><a href="industrias.php#Exhibicion">Exhibición y Almacenaje </a></li>
+								<li><a href="../../industrias.php#telecom">Telecomunicaciones</a></li>
+								<li><a href="../../industrias.php#Electrico">Electricidad</a></li>
+								<li><a href="../../industrias.php#Mobiliario">Mobiliario Urbano</a></li>
+								<li><a href="../../industrias.php#Exhibicion">Exhibición y Almacenaje </a></li>
 							</ul>
 						</li>
 
 						<li id="nav2">
-							<a href="maquinaria.php" id="servicios-link" class="TituloMenu">Maquinaria</a>
+							<a href="../../maquinaria.php" id="servicios-link" class="TituloMenu">Maquinaria</a>
 						</li>
 
 						<li>
-							<a href="#" id="nosotros-link" class="TituloMenu">Nosotros</a>
-							<ul class="nav-menu" id="nosotros-submenu">
-								<li><a href="./public/Nosotros/">Nosotros</a></li>
-								<li><a href="nosotros.php#staff">Equipo de gestión administrativa y comercial</a></li>
-								<li><a href="#">Planta de Transformetal</a></li>
-								<li><a href="#">Política de calidad</a></li>
-								<li><a href="#">Responsabilidad Social Empresarial</a></li>
-							</ul>
+							<a href="../../public/Nosotros/" id="nosotros-link" class="TituloMenu">Nosotros</a>
+
 						</li>
-						<li><a href="./contacto.php" class="TituloMenu">Contacto</a></li>
+						<li><a href="../../contacto.php" class="TituloMenu">Contacto</a></li>
 						<label for="check" class="close-menu"><i class="fas fa-times"></i></label>
 					</ul>
 					<!-- Barra de búsqueda actualizada -->
-					<form class="search-form" action="busqueda.php" method="get">
+					<form class="search-form" action="" method="get">
 						<input type="search" name="query" placeholder="Buscar..." required>
 						<button class="btn-search" type="submit">
 							<i class="fa-solid fa-magnifying-glass"></i>
@@ -163,6 +148,7 @@
 				</nav>
 			</div>
 			<!--menu fin -->
+
 		</header>
 
 		<!--Seccion del form Fin-->
@@ -343,40 +329,40 @@
 					</div>
 				</a>
 				<a href="../../public/products/Telcos/index.php#racks">
-				<div class="producto">
-					<img src="../../assets/img/iconosProductos/Telcos/racks.png" alt="Racks">
-					<p>RACKS</p>
-				</div>
+					<div class="producto">
+						<img src="../../assets/img/iconosProductos/Telcos/racks.png" alt="Racks">
+						<p>RACKS</p>
+					</div>
 				</a>
 				<a href="../../public/products/Telcos/index.php#rieles">
-				<div class="producto">
-					<img src="../../assets/img/iconosProductos/Telcos/rieles.png" alt="Rieles">
-					<p>RIELES</p>
-				</div>
+					<div class="producto">
+						<img src="../../assets/img/iconosProductos/Telcos/rieles.png" alt="Rieles">
+						<p>RIELES</p>
+					</div>
 				</a>
 				<a href="../../public/products/Telcos/index.php#escalerillas">
-				<div class="producto">
-					<img src="../../assets/img/iconosProductos/Telcos/escalerillas.png" alt="Escalerillas">
-					<p>ESCALERILLAS</p>
-				</div>
+					<div class="producto">
+						<img src="../../assets/img/iconosProductos/Telcos/escalerillas.png" alt="Escalerillas">
+						<p>ESCALERILLAS</p>
+					</div>
 				</a>
 				<a href="../../public/products/Telcos/index.php#bandejas">
-				<div class="producto">
-					<img src="../../assets/img/iconosProductos/Telcos/bandejas.png" alt="Bandejas">
-					<p>BANDEJAS</p>
-				</div>
+					<div class="producto">
+						<img src="../../assets/img/iconosProductos/Telcos/bandejas.png" alt="Bandejas">
+						<p>BANDEJAS</p>
+					</div>
 				</a>
 				<a href="../../public/products/Telcos/index.php#planta_externa">
-				<div class="producto">
-					<img src="../../assets/img/iconosProductos/Telcos/planta externa.png" alt="Planta Externa">
-					<p>PLANTA EXTERNA</p>
-				</div>
+					<div class="producto">
+						<img src="../../assets/img/iconosProductos/Telcos/planta externa.png" alt="Planta Externa">
+						<p>PLANTA EXTERNA</p>
+					</div>
 				</a>
 				<a href="../../public/products/Telcos/index.php#planta_interna">
-				<div class="producto">
-					<img src="../../assets/img/iconosProductos/Telcos/planta interna.png" alt="Planta Interna">
-					<p>PLANTA INTERNA</p>
-				</div>
+					<div class="producto">
+						<img src="../../assets/img/iconosProductos/Telcos/planta interna.png" alt="Planta Interna">
+						<p>PLANTA INTERNA</p>
+					</div>
 				</a>
 			</div>
 		</section>

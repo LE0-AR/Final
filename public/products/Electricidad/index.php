@@ -6,31 +6,37 @@ $categorias = [
   'GABINETES' => [
     'id' => 'gabinetes',
     'titulo' => 'Gabinetes',
-    'descripcion' => 'Los gabinetes de Transformetal están diseñados para ofrecer una solución confiable y versátil en una amplia variedad de aplicaciones...',
+    'descripcion' => 'Nuestros gabinetes eléctricos de metalmecánica están diseñados para ofrecer la máxima protección 
+                        y durabilidad en entornos industriales y comerciales. Fabricados con materiales de alta calidad y
+                        procesos de producción avanzados, garantizamos soluciones robustas y seguras para tus necesidades
+                        de distribución y control eléctrico.Su protección superior cumple con altos estándares de seguridad, 
+                        y su diseño personalizado ofrece una amplia gama de tamaños, configuraciones y accesorios para adaptarnos 
+                        a sus requerimientos específicos. Nuestros gabinetes tienen un acabado duradero, son de fácil instalación
+                        y mantenimiento.',
     'icono' => '../../assets/img/iconosProductos/Electricidad/gabinetes.png'
   ],
   'CAJAS' => [
     'id' => 'cajas', // Corregido: era 'racks'
     'titulo' => 'Cajas', // Corregido: era 'Racks'
     'descripcion' => ' Las cajas de Transformetal están diseñadas para brindar seguridad
-                      y organización a sus equipos electrónicos y de telecomunicaciones.
-                      Fabricadas con materiales de alta calidad, ofrecen resistencia,
-                      durabilidad y protección contra condiciones externas. Disponibles
-                      en diversas dimensiones y configuraciones, nuestras cajas se adaptan
-                      a sus necesidades específicas, garantizando un acceso fácil y una
-                      instalación eficiente. Transformetal, su mejor opción para soluciones confiables de resguardo.',
+                        y organización a sus equipos electrónicos y de telecomunicaciones.
+                        Fabricadas con materiales de alta calidad, ofrecen resistencia,
+                        durabilidad y protección contra condiciones externas. Disponibles
+                        en diversas dimensiones y configuraciones, nuestras cajas se adaptan
+                        a sus necesidades específicas, garantizando un acceso fácil y una
+                        instalación eficiente. Transformetal, su mejor opción para soluciones confiables de resguardo.',
     'icono' => '../../assets/img/iconosProductos/Electricidad/cajas.png'
   ],
   'SOPORTES Y HERRAJES' => [
     'id' => 'soportes_herrajes', // Corregido: era 'rieles'
     'titulo' => 'Soportes y Herrajes', // Corregido: era 'Rieles'
     'descripcion' => 'Los soportes y herrajes de Transformetal están diseñados para garantizar la
-                      fijación y el soporte óptimos en una amplia variedad de aplicaciones.
-                      Fabricados con materiales resistentes y de alta calidad, ofrecen durabilidad
-                      y un desempeño confiable en todo tipo de proyectos. Disponibles en diferentes
-                      tamaños y diseños, se adaptan perfectamente a sus necesidades, proporcionando
-                      soluciones seguras y eficientes para la instalación y el mantenimiento de
-                      su infraestructura.',
+                        fijación y el soporte óptimos en una amplia variedad de aplicaciones.
+                        Fabricados con materiales resistentes y de alta calidad, ofrecen durabilidad
+                        y un desempeño confiable en todo tipo de proyectos. Disponibles en diferentes
+                        tamaños y diseños, se adaptan perfectamente a sus necesidades, proporcionando
+                        soluciones seguras y eficientes para la instalación y el mantenimiento de
+                        su infraestructura.',
     'icono' => '../../assets/img/iconosProductos/Electricidad/soportes.png'
   ]
 ];
@@ -117,7 +123,7 @@ $base_url = "http://localhost/transformetal/app/app/";
 <body>
   <header id="header">
 
-    <div class="container-hero  position: fixed;">
+    <div class="container-hero ">
       <div class="container hero">
         <div class="customer-support">
           <i class=""></i>
@@ -127,8 +133,8 @@ $base_url = "http://localhost/transformetal/app/app/";
           </div>
         </div>
         <div class="container-logo">
-          <a href="../../">
-            <i><img src="../../../assets/img/logot.png" alt="100px" style="width: 500px; height: 100px; "></i>
+          <a href="../../../">
+            <i><img src="../../../assets/img/logot.png" alt="100px"></i>
 
           </a>
         </div>
@@ -152,58 +158,50 @@ $base_url = "http://localhost/transformetal/app/app/";
             <a href="#" id="productos-link" class="TituloMenu">Productos</a>
             <ul class="nav-menu" id="productos-submenu">
               <li>
-                <a href="#" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
+                <a href="public/products/Telcos/" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
                 <ul class="nav-submenu ">
-                  <li><a href="productos.php">Gabinetes</a></li>
-                  <li><a href="productos.php#section2">Racks</a></li>
-                  <li><a href="productos.php#section9">Bandejas</a></li>
-                  <li><a href="productos.php#section3-1">Riel</a></li>
-                  <li><a href="productos.php#section4-1">Escalerilla</a></li>
-                  <li><a href="productos.php#section85">Planta Externa</a></li>
-                  <li><a href="productos.php#section85">Planta Interna</a></li>
-                  <li><a href=""></a></li>
+                  <li><a href="../Telcos/index.php#gabinetes">Gabinetes</a></li>
+                  <li><a href="../Telcos/index.php#racks">Racks</a></li>
+                  <li><a href="../Telcos/index.php#bandejas">Bandejas</a></li>
+                  <li><a href="../Telcos/index.php#rieles">Riel</a></li>
+                  <li><a href="../Telcos/index.php#escalerillas">Escalerilla</a></li>
+                  <li><a href="../Telcos/index.php#planta_externa">Planta Externa</a></li>
+                  <li><a href="../Telcos/index.php#planta_interna">Planta Interna</a></li>
+
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Planta Externa y Electricidad<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
                 <ul class="nav-submenu plantaExterna">
-                  <li><a href="productos.php">Gabinetes</a></li>
-                  <li><a href="productos.php#section50">Cajas</a></li>
-                  <li><a href="productos.php#section70">Herrajes</a></li>
+                  <li><a href="../Electricidad/index.php#gabinetes">Gabinetes</a></li>
+                  <li><a href="../Electricidad/index.php#cajas">Cajas</a></li>
+                  <li><a href="../Electricidad/index.php#soportes_herrajes">Soportes y Herrajes</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Exhibición y Almacenes <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
                 <ul class="nav-submenu Almacenes">
-                  <li><a href="productos.php#Gondolas">Góndolas </a></li>
-                  <li><a href="productos.php#Estanteria">Estanterías </a></li>
-                  <li><a href="productos.php#RackIndustrial">Racks Industrial</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="main-category">Arquitectónicos y Panales Decorativos <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-                <ul class="nav-submenu paneles">
-                  <li><a href="productos.php#Arquitectonicos">Paneles decorativos</a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                  <li><a href="../almacenaje/index.php#Gondolas">Góndolas </a></li>
+                  <li><a href="../almacenaje/index.php#estanterias">Estanterías </a></li>
+                  <li><a href="../almacenaje/index.php#Rack_Industrial">Racks Industrial</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Mobiliario Urbano <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-                <ul class="nav-submenu Mobiliario">
-                  <li><a href="productos.php#Mobiliario">Basureros</a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                <ul class="nav-submenu paneles">
+                  <li><a href="../Mobiliario/index.php#Basureros">Basureros </a></li>
+                  <li><a href="../Mobiliario/index.php#Paneles">Paneles decorativos</a></li>
+                  <li><a href="../Mobiliario/index.php#Mupis">Mupis </a></li>
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Torres <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-                <ul class="nav-submenu TorresIrios">
-                  <li><a href="./productos.php#section25">Torres Arriostradas y Accesorios</a></li>
-                  <li><a href="./control/">Instalacion de torre arriostrada</a></li>
-                  <li><a href="./control/SistemaTierra.php">Sistemas de puesta a tierra</a></li>
-                  <li><a href="./control/pararrayos.php">Sistema de pararrayos y baliza </a></li>
-
+                <ul class="nav-submenu Mobiliario">
+                  <li><a href="../Torre/index.php#Secciones">Torres Arriostradas</a></li>
+                  <li><a href="../Torre/index.php#Accesorios">Accesorios para torres</a></li>
+                  <li><a href="../../../control/">Instalacion de torre arriostrada</a></li>
+                  <li><a href="../../../control/SistemaTierra.php">Sistemas de puesta a tierra</a></li>
+                  <li><a href="../../../control/pararrayos.php">Sistema de pararrayos y baliza </a></li>
                 </ul>
               </li>
             </ul>
@@ -216,32 +214,26 @@ $base_url = "http://localhost/transformetal/app/app/";
           <li id="nav2">
             <a href="#" id="industrias-link" class="TituloMenu">Sectores</a>
             <ul class="nav-menu" id="industrias-submenu">
-              <li><a href="industrias.php#telecom">Telecomunicaciones</a></li>
-              <li><a href="industrias.php#Electrico">Electricidad</a></li>
-              <li><a href="industrias.php#Mobiliario">Mobiliario Urbano</a></li>
-              <li><a href="industrias.php#Exhibicion">Exhibición y Almacenaje </a></li>
+              <li><a href="../../../industrias.php#telecom">Telecomunicaciones</a></li>
+              <li><a href="../../../industrias.php#Electrico">Electricidad</a></li>
+              <li><a href="../../../industrias.php#Mobiliario">Mobiliario Urbano</a></li>
+              <li><a href="../../../industrias.php#Exhibicion">Exhibición y Almacenaje </a></li>
             </ul>
           </li>
 
           <li id="nav2">
-            <a href="maquinaria.php" id="servicios-link" class="TituloMenu">Maquinaria</a>
+            <a href="../../../maquinaria.php" id="servicios-link" class="TituloMenu">Maquinaria</a>
           </li>
 
           <li>
-            <a href="#" id="nosotros-link" class="TituloMenu">Nosotros</a>
-            <ul class="nav-menu" id="nosotros-submenu">
-              <li><a href="./public/Nosotros/">Nosotros</a></li>
-              <li><a href="nosotros.php#staff">Equipo de gestión administrativa y comercial</a></li>
-              <li><a href="#">Planta de Transformetal</a></li>
-              <li><a href="#">Política de calidad</a></li>
-              <li><a href="#">Responsabilidad Social Empresarial</a></li>
-            </ul>
+            <a href="../../../public/Nosotros/" id="nosotros-link" class="TituloMenu">Nosotros</a>
+
           </li>
-          <li><a href="./contacto.php" class="TituloMenu">Contacto</a></li>
+          <li><a href="../../../contacto.php" class="TituloMenu">Contacto</a></li>
           <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
         </ul>
         <!-- Barra de búsqueda actualizada -->
-        <form class="search-form" action="busqueda.php" method="get">
+        <form class="search-form" action="" method="get">
           <input type="search" name="query" placeholder="Buscar..." required>
           <button class="btn-search" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -253,9 +245,10 @@ $base_url = "http://localhost/transformetal/app/app/";
       </nav>
     </div>
     <!--menu fin -->
-  </header>
-  <div class="section-main">
 
+  </header>
+
+  <div class="section-main">
 
     <!-- Navegación de categorías -->
     <div class="category-nav">
@@ -312,23 +305,23 @@ $base_url = "http://localhost/transformetal/app/app/";
     <div class="spinner"></div>
   </div>
   <script>
-document.addEventListener('DOMContentLoaded', function() {
-    function mostrarCategoria(categoriaId) {
+    document.addEventListener('DOMContentLoaded', function() {
+      function mostrarCategoria(categoriaId) {
         // Ocultar todas las secciones
         document.querySelectorAll('.product-section').forEach(section => {
-            section.style.display = 'none';
+          section.style.display = 'none';
         });
 
         document.querySelectorAll('.category-link').forEach(link => {
-            link.classList.remove('active');
+          link.classList.remove('active');
         });
 
         // Encontrar la categoría por ID
         let categoriaEncontrada = null;
         Object.entries(<?php echo json_encode($categorias); ?>).forEach(([key, value]) => {
-            if (value.id === categoriaId) {
-                categoriaEncontrada = value;
-            }
+          if (value.id === categoriaId) {
+            categoriaEncontrada = value;
+          }
         });
 
         // Mostrar sección seleccionada
@@ -336,45 +329,45 @@ document.addEventListener('DOMContentLoaded', function() {
         const linkActivo = document.querySelector(`[data-category="${categoriaId}"]`);
 
         if (seccionActiva && linkActivo && categoriaEncontrada) {
-            seccionActiva.style.display = 'block';
-            linkActivo.classList.add('active');
+          seccionActiva.style.display = 'block';
+          linkActivo.classList.add('active');
 
-            // Actualizar breadcrumb y título
-            const breadcrumb = document.querySelector('#breadcrumb-text');
-            breadcrumb.textContent = categoriaEncontrada.titulo;
-            document.title = `${categoriaEncontrada.titulo} - TRANSFORMETAL`;
+          // Actualizar breadcrumb y título
+          const breadcrumb = document.querySelector('#breadcrumb-text');
+          breadcrumb.textContent = categoriaEncontrada.titulo;
+          document.title = `${categoriaEncontrada.titulo} - TRANSFORMETAL`;
 
-            localStorage.setItem('activeSection', categoriaId);
+          localStorage.setItem('activeSection', categoriaId);
         }
-    }
+      }
 
-    // Manejar hash inicial
-    const hash = window.location.hash.slice(1);
-    const initialCategory = hash || localStorage.getItem('activeSection') || 'gabinetes';
-    mostrarCategoria(initialCategory);
+      // Manejar hash inicial
+      const hash = window.location.hash.slice(1);
+      const initialCategory = hash || localStorage.getItem('activeSection') || 'gabinetes';
+      mostrarCategoria(initialCategory);
 
-    // Manejar clics en enlaces
-    document.querySelectorAll('.category-link').forEach(link => {
+      // Manejar clics en enlaces
+      document.querySelectorAll('.category-link').forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const categoria = this.dataset.category;
-            history.pushState(null, '', `#${categoria}`);
-            mostrarCategoria(categoria);
+          e.preventDefault();
+          const categoria = this.dataset.category;
+          history.pushState(null, '', `#${categoria}`);
+          mostrarCategoria(categoria);
         });
-    });
+      });
 
-    // Manejar cambios en el hash
-    window.addEventListener('hashchange', () => {
+      // Manejar cambios en el hash
+      window.addEventListener('hashchange', () => {
         const categoria = window.location.hash.slice(1) || 'gabinetes';
         mostrarCategoria(categoria);
+      });
     });
-});
-</script>
+  </script>
 
 
-<script src="../../../assets/js/menu.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/menu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 
 </html>

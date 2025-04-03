@@ -1,21 +1,4 @@
-@font-face {
-    font-family: 'khand Bold';
-    src: url('./fuente/BebasNeue-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Libre Franklin';
-    src: url('./fuente/libre-franklin-regular.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Libre Franklin Bold';
-    src: url('./fuente/libre-franklin.bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+
   :root {
     --Titulo: #f95609;
     --Subtitulo: #1860ef;
@@ -31,11 +14,11 @@
     scroll-behavior: smooth;
 }
 :target {
-    scroll-margin-top: 200px; /* Altura del header */
+    scroll-margin-top: 200px; 
     
   }
 .section{
-  margin-top: 200px;
+  margin-top: 150px 200px;
 }
   .sectores {
     text-align: center;
@@ -46,9 +29,9 @@
   .titulo {
 
     font-family: 'khand Bold', sans-serif;
-  
     font-size: 48px;
     color: var(--Titulo);
+
     text-transform: uppercase;
   }
   .tld {
