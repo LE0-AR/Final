@@ -144,7 +144,7 @@ html {
 /* ...existing code... */
 
 /* Estilos para menú responsivo */
-@media (max-width: 1199px) {
+@media (max-width: 1650px) {
     .aside {
         left: -270px;
         transition: all 0.3s ease;

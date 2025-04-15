@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="assets/css/chatbot.css">
 	<link rel="stylesheet" href="assets/css/content.css">
 	<title>TRANSFORMETAL</title>
+	<link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -148,7 +149,7 @@
 	</header>
 
 
-	<section id="maquina1">
+	<section id="maquinaria">
 
 		<div class="section__container header__container">
 			<div class="header__image__container" style="  background-image: linear-gradient( to right, #2c3855e6,#647dbb1a),url('assets/img/servicio/principalMaquina.jpeg');">
@@ -255,7 +256,7 @@
 					<div class="header">
 						<h1>NOMBRE: CORTADORA LÁSER</h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -314,7 +315,7 @@
 					<div class="header">
 						<h1>NOMBRE: DOBLADORA CNC</h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -372,7 +373,7 @@
 					<div class="header">
 						<h1>NOMBRE: DOBLADPRA DE 4M</h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -429,7 +430,7 @@
 					<div class="header">
 						<h1>NOMBRE: SOLDADORA LÁSER </h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -487,7 +488,7 @@
 					<div class="header">
 						<h1>NOMBRE: TROQUELADORA PRESS </h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -548,7 +549,7 @@
 					<div class="header">
 						<h1>NOMBRE: HORNO </h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -605,7 +606,7 @@
 					<div class="header">
 						<h1>NOMBRE: SOLDADORA DE TORNILLOS</h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -665,7 +666,7 @@
 					<div class="header">
 						<h1>NOMBRE: SOLDADORA MIG MILLER </h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -728,7 +729,7 @@
 					<div class="header">
 						<h1>NOMBRE: CABINA DE PINTURA ELECTROTÁTICA </h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -784,7 +785,7 @@
 					<div class="header">
 						<h1>NOMBRE: SOLDADORA PUNTEADORA </h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -848,7 +849,7 @@
 					<div class="header">
 						<h1>NOMBRE: CIZALLA UNIVERSAL </h1>
 						<div class="revision">
-							<img src="assets/img/logo.png" alt="Logo" class="logo">
+							<img src="assets/img/isotipo.png" alt="Logo" class="logo">
 						</div>
 					</div>
 					<div class="tabla-principal">
@@ -947,155 +948,12 @@
 
 
 	<!--chatbot Inicio-->
-	<!--chatbot de whatsapp-->
-	<div class="message-wrapper">
-		<div class="message-toggle">
-			<a href="https://api.whatsapp.com/send/?phone=50237673705&type=phone_number&app_absent=0" target="_blank">
-				<i class="fa-brands fa-whatsapp"></i>
-			</a>
-
-		</div>
-	</div>
-	<!--whatsapp Fin-->
-
-	<!--Chat Incio-->
-	<!-- Chat bot UI start -->
-	<div class="chat-screen">
-		<div class="chat-header">
-			<div class="chat-header-title">Asistente Transformetal</div>
-		</div>
-		<!-- Prueba de chatbot pedido de datos inicio -->
-		<form id="chat-form" method="POST" action="">
-			<div class="chat-mail">
-				<div class="row">
-					<div class="chat-description">
-						<p style="font-size: 14px; top:-50px;">
-							Bienvenido/a. Estamos aquí para atenderle de la mejor manera posible.
-							Por favor, proporcione la siguiente información para comenzar.
-						</p>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<input
-								style="width: 280px;  height:30px;"
-								required
-								type="text"
-								class="form-control input-nombre"
-								placeholder="Ingrese su nombre..."
-								name="nombre" />
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="form-group">
-							<input
-								style="width: 280px;  height:30px;"
-								required
-								type="email"
-								class="form-control input-email"
-								placeholder="Ingrese su correo electronico..."
-								name="email" />
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="form-group">
-							<input
-								style="width: 280px;  height:30px;"
-								required
-								type="number"
-								class="form-control input-telefono"
-								placeholder="Ingrese su numero telefonico..."
-								name="telefono" />
-						</div>
-					</div>
-					<div class="col-md-12 btn">
-						<center>
-							<button
-								type="submit"
-								class="btn btn-primary btn-form">
-								Iniciar
-							</button>
-						</center>
-					</div>
-				</div>
-
-
-			</div>
-
-			<!-- Este es el nuevo div que se activará con un botón -->
-			<div id="activate-chat-body" class="chat-body hide" style="display: none;">
-				<!-- Aquí irán los mensajes del chat -->
-			</div>
-			<div class="chat-input hide" style="display: none;">
-				<input
-					type="text"
-					placeholder="Escriba su mensaje..."
-					id="user-input"
-					name="user-input" />
-				<div class="input-action-icon">
-					<a id="send-message">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="feather feather-send"
-							id="enviar">
-							<line x1="22" y1="2" x2="11" y2="13"></line>
-							<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-						</svg>
-					</a>
-				</div>
-
-			</div>
-		</form>
-	</div>
-	<div class="chat-bot-icon">
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			class="feather feather-message-square animate">
-			<path
-				d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-		</svg>
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			class="feather feather-x">
-			<line x1="18" y1="6" x2="6" y2="18"></line>
-			<line x1="6" y1="6" x2="18" y2="18"></line>
-		</svg>
-	</div>
-	<!-- Chat Bot UI Ends -->
-	<!--Chat FIn-->
-
+	
 	<!--Chatbot Fin-->
 
 	<div id="loader">
 		<div class="spinner"></div>
 	</div>
-
 
 
 </body>

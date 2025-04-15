@@ -55,7 +55,7 @@
   .overlay h1 {
     color: var(--bntColor);
     font-size: 48px;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     font-family: "Bebas Neue", serif;
   }
@@ -67,6 +67,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
   }
   
   /* CONTENEDOR DEL TEXTO */
@@ -79,7 +80,7 @@
   .title {
     color: var(--Titulo);
     font-size: 48px;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 10px;
     margin: 25px 0;
     font-family: "Bebas Neue", serif;
@@ -133,7 +134,7 @@
     background-color: var(--Titulo);
     color: var(--ColorNegro);
     padding: 15px 0;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
     display: inline-block;
     width: 55%;
@@ -174,7 +175,7 @@
     padding: 10px 20px;
     text-decoration: none;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 10px;
     transform: skewX(-15deg);
     position: relative;

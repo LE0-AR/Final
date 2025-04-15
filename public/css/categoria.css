@@ -15,7 +15,7 @@ body {
   background-color: #fff;
   margin: 150px;
 }
-
+/*Prodcutos nas ve*/
 .productos-mas-vendidos {
   text-align: center;
   padding: 20px 0;
@@ -61,8 +61,8 @@ body {
   padding: 30px;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  max-width: 80%;
+  margin: 0 0;
+  max-width: 100%;
 }
 
 .producto {
@@ -70,14 +70,14 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 0 ;
 }
 
 .producto img {
   width: 100%;
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 450px;
+  max-height: 450px;
   object-fit: contain;
   display: block;
   margin-bottom: 10px;
@@ -93,6 +93,7 @@ body {
 }
 /*producto*/
 .VerProduct {
+ padding: 30px;
   display: inline-block;
   background-color: var(--ColorNegro);
   color: var(--bntColor);
@@ -146,26 +147,36 @@ body {
 }
 
 /*Contactenos*/
-
+.about-section{
+  position: relative;
+  display: flex;
+ 
+}
 .about-section img {
   width: 100%;
-  height: 993px;
+  height: auto;
   margin-left: 0;
+  z-index: -1;
+  display: flex;
 }
 
 .content {
   max-width: 30%;
   color: black;
-  z-index: 1;
-  margin-top: -30%;
-  margin-left: 16%;
+  position: absolute;
+  top: 400px;
+  margin-left: 14%;
+  align-items: center;
+  justify-content: center;
   text-align: justify;
   position: absolute;
+  display: block;
+  gap: 25px;
 }
 
 .content h1 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
   font-family: "Bebas Neue", serif;
 }
@@ -175,6 +186,14 @@ body {
   font-family: "Libre Franklin", serif;
   line-height: 1.6;
 }
+
+@media (max-width: 1500px) {
+  .content {
+    max-width: 30%;
+    top: 270px;
+  }
+}
+
 
 /*Video */
 /* Estilos generales */
@@ -202,7 +221,7 @@ body {
   font-size: 48px;
   color: var(--Titulo);
   padding: 10px 0;
-  font-weight: bold;
+  font-weight: normal;
   display: inline-block;
   width: 55%;
   margin-left: -50%;
@@ -226,26 +245,31 @@ body {
   height: 100%;
   max-height: 1200px; /* Ajuste de altura máxima */
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(255, 136, 0, 0.6);
+  box-shadow: 0px 4px 10px #ff880099;
   border: none;
 }
-/*Contacto*/.contact-container {
-  width: 80%;
-  max-width: 70%;
-  margin: auto;
+/*Contacto*/
+.contact-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaciado uniforme entre los grupos de entrada */
 }
 
 .titulcontacto h2 {
   font-family: "Bebas Neue", serif;
   font-size: 48px;
   color: var(--Titulo);
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   display: inline-block;
 }
 
 .contact-forms {
   width: 100%;
+
 }
 
 .contact-input-group {
@@ -311,4 +335,116 @@ body {
 .contact-input-group input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+/*modo resposnive */
+
+/* Media queries para responsividad */
+@media (max-width: 1440px) {
+  .productos-mas-vendidos {
+    padding: 20px 100px;
+  }
+
+  .productos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  .Cinta {
+    width: 60%;
+    margin-left: -50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .productos-mas-vendidos {
+    padding: 20px 50px;
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .producto {
+    max-width: 300px;
+  }
+
+  .producto img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .producto h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 100px 0;
+  }
+
+  .productos-mas-vendidos {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .Cinta {
+    width: 80%;
+    margin-left: -30%;
+  }
+
+  .Cinta h2 {
+    font-size: 28px;
+  }
+
+  .productos {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .producto img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productos-mas-vendidos {
+    padding: 10px;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+  }
+
+  .Cinta {
+    width: 90%;
+    margin-left: -20%;
+  }
+
+  .Cinta h2 {
+    font-size: 24px;
+  }
+
+  .producto {
+    max-width: 100%;
+  }
+
+  .producto img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+  .producto h3 {
+    font-size: 20px;
+  }
+
+  .VerProduct {
+    padding: 8px 16px;
+  }
+
+  .VerProduct p {
+    font-size: 14px;
+  }
 }

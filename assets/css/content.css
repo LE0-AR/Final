@@ -1,9 +1,20 @@
-body {
-  background: linear-gradient(to right, #d3d3d3, #e0e0e0, #d3d3d3);
-  height: 100vh; /* Abarca toda la altura de la pantalla */
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #2c3855;
+  --primary-color-dark: #435681;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
+  --max-width: 1200px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .custom-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 3 columnas */
@@ -66,7 +77,67 @@ body {
   max-width: 600px;
 }
 
+/* Cambiar prefijo de clases para maquinarias */
+.maquinaria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.maquinaria-grid-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.maquinaria-grid-item:hover {
+  transform: scale(1.05);
+}
+
+.maquinaria-grid-item img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+.maquinaria-grid-item span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+}
+
+/* Modal específico para maquinarias */
+.maquinaria-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000cc;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.maquinaria-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
 
 /* Estilos ficha */
 .ficha {
@@ -153,16 +224,6 @@ body {
   padding: 10px;
 }
 
-ul {
-  padding-left: 20px;
-}
-
-p,
-ul li {
-  font-size: 14px;
-  line-height: 24px;  
-}
-
 /* Estilo Responsivo */
 @media (max-width: 1024px) {
   /* Dispositivos de tablet */
@@ -185,6 +246,19 @@ ul li {
 
   .custom-grid-item span {
     font-size: 14px; /* Ajusta el tamaño del texto */
+  }
+
+  .maquinaria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .maquinaria-grid-item img {
+    max-width: 180px;
+    height: auto;
+  }
+
+  .maquinaria-grid-item span {
+    font-size: 14px;
   }
 }
 
@@ -209,6 +283,19 @@ ul li {
 
   .custom-grid-item span {
     font-size: 14px; /* Ajuste de texto */
+  }
+
+  .maquinaria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .maquinaria-grid-item img {
+    max-width: 160px;
+    height: auto;
+  }
+
+  .maquinaria-grid-item span {
+    font-size: 13px;
   }
 }
 
@@ -238,6 +325,19 @@ ul li {
 
   .custom-grid-item span {
     font-size: 12px; /* Ajuste en el texto */
+  }
+
+  .maquinaria-grid {
+    padding: 10px;
+  }
+
+  .maquinaria-grid-item img {
+    max-width: 140px;
+    height: auto;
+  }
+
+  .maquinaria-grid-item span {
+    font-size: 12px;
   }
 }
 /*modo responsivo*/
@@ -325,28 +425,10 @@ ul li {
 }
 
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-
-:root {
-  --primary-color: #2c3855;
-  --primary-color-dark: #435681;
-  --text-dark: #333333;
-  --text-light: #767268;
-  --extra-light: #f3f4f6;
-  --white: #ffffff;
-  --max-width: 1200px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .section__container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 80px 16px; /* 5rem -> 80px, 1rem -> 16px */
+  padding: 0px 16px; /* 5rem -> 80px, 1rem -> 16px */
 }
 
 .section__header {

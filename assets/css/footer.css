@@ -1,6 +1,16 @@
 
-/*Footer*/
-
+:root {
+    --primary-color: #000000;
+    --background-color: #f9f5f0;
+    --dark-color: #f95609;
+    --colorfont:#ffffff;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 .footer-container {
     top: -80px;
     background: #000;
@@ -35,6 +45,8 @@
     font-size: 16px;
     margin-bottom: 20px;
     padding: 30px 0;
+    color: var(--colorfont);
+    font-weight: normal;
 }
 
 .footer-icons {

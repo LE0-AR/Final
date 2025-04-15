@@ -41,7 +41,7 @@
 					</div>
 					<div class="container-logo">
 						<a href="../">
-							<i><img src="../assets/img/logot.png" alt="100px" class="logoTipo"></i>
+							<i><img src="../assets/img/logot.png"  class="logoTipo"></i>
 
 						</a>
 					</div>

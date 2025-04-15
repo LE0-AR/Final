@@ -73,9 +73,61 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
     });
+
+    // Cerrar submenús al hacer clic en un enlace dentro de ellos
+    document.querySelectorAll('.industrias-submenu a, .nav-submenu a').forEach(link => {
+      link.addEventListener('click', function () {
+        // Cerrar todos los submenús
+        document.querySelectorAll('.industrias-submenu.show, .nav-submenu.show').forEach(openSubmenu => {
+          openSubmenu.classList.remove('show');
+        });
+      });
+    });
+
+    // Cerrar submenús y menú principal al hacer clic en un enlace dentro de ellos
+    document.querySelectorAll('.main-category a, .nav-submenu a').forEach(link => {
+      link.addEventListener('click', function () {
+        // Cerrar todos los submenús
+        document.querySelectorAll('.nav-submenu.show, .nav-menu.show').forEach(openSubmenu => {
+          openSubmenu.classList.remove('show');
+        });
+
+        // Cerrar el menú principal
+        document.getElementById('check').checked = false; // Desmarcar el checkbox del menú
+      });
+    });
+
+    // Cerrar submenús y menú principal al hacer clic en un enlace dentro de "Sectores"
+    document.querySelectorAll('#industrias-submenu a').forEach(link => {
+      link.addEventListener('click', function () {
+        // Cerrar el submenú de "Sectores"
+        document.getElementById('industrias-submenu').classList.remove('show');
+        
+        // Cerrar el menú principal
+        document.getElementById('check').checked = false; // Desmarcar el checkbox del menú
+      });
+    });
+
+    // Activar el efecto del loader
+    const loader = document.getElementById('loader');
+    if (loader) {
+        // Mostrar el loader al cargar la página
+        loader.style.display = 'flex';
+
+        // Ocultar el loader después de 1.5 segundos (duración de la animación)
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 1500);
+    }
   });
   
 
   /*Para responsivo*/
 
   
+	window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-XMR0EQ2J4K');

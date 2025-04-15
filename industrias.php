@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/css/footer.css">
   </head>
 
   <body>
@@ -158,95 +158,105 @@
           puede intervenir la metalmecánica.
         </p>
         <section id="SectoresLinea"><img src="./assets/img/sectores/divisor.png" alt="" class="SectoresLinea"></section>
-        <div class="sector" id="Telcos">
-          <img src="./assets/img/sectores/sector/telecomunicaciones.jpg" alt="Torre de telecomunicaciones" class="imagen">
-          <div class="contenido">
-            <h3 class="subtitulo">SECTOR DE TELECOMUNICACIONES</h3>
-            <p class="texto">
-              Nuestros productos y soluciones destacan por ser de alta calidad, esenciales
-              para garantizar que las redes funcionen de manera eficiente y confiable.
-            </p>
-            <p class="texto">
-              Desde estructuras robustas para torres de comunicaciones hasta componentes precisos
-              para equipos de transmisión, nuestra experiencia en metalmecánica asegura que cada
-              elemento esté diseñado para soportar las exigencias del entorno actual.
-            </p>
-            <a href="#" class="button">Ver Productos</a>
+
+     
+
+      </section>
+      <!--Telecomunicaciones Fin-->
+      <section class="sectores" id="telecom">
+          <div class="sector">
+            <img src="./assets/img/sectores/sector/telecomunicaciones.jpg" alt="Torre de telecomunicaciones" class="imagen">
+            <div class="contenido">
+              <h3 class="subtitulo">sector de telecomunicaciones </h3>
+              <p class="texto">
+                Nuestros productos y soluciones destacan por ser de alta calidad, esenciales
+                para garantizar que las redes funcionen de manera eficiente y confiable.
+              </p>
+              <p class="texto">
+                Desde estructuras robustas para torres de comunicaciones hasta componentes precisos
+                para equipos de transmisión, nuestra experiencia en metalmecánica asegura que cada
+                elemento esté diseñado para soportar las exigencias del entorno actual.
+              </p>
+              <center>
+                <a href="public/telcos/" class="VerProduct">
+                  <p>Ver Productos</p>
+                </a>
+              </center>
+
+            </div>
           </div>
-        </div>
 
-        <a class="Media">
-          <p>ALGUNOS DE NUESTROS PRODUCTOS</p>
-        </a>
+          <a class="Media">
+            <p>ALGUNOS DE NUESTROS PRODUCTOS</p>
+          </a>
 
-        <section class="contenedor-imagenes swiper">
-          <div class="swiper-wrapper">
-            <div class="imagen-placeholder swiper-slide">
-              <img src="./assets/img/sectores/telcos/microdata.png" alt="Imagen 1">
-              <p>Micro-Datacenter</p>
-            </div>
-            <div class="imagen-placeholder swiper-slide">
-              <img src="./assets/img/sectores/telcos/rack.png" alt="Imagen 2">
-              <p>Rack</p>
-            </div>
-            <div class="imagen-placeholder swiper-slide">
-              <img src="./assets/img/sectores/telcos/gabinete.png" alt="Imagen 3">
-              <p>Gabinete de poste</p>
-            </div><!--
+          <section class="contenedor-imagenes swiper">
+            <div class="swiper-wrapper">
+              <div class="imagen-placeholder swiper-slide">
+                <img src="./assets/img/sectores/telcos/microdata.png" alt="Imagen 1">
+                <p>Micro-Datacenter</p>
+              </div>
+              <div class="imagen-placeholder swiper-slide">
+                <img src="./assets/img/sectores/telcos/rack.png" alt="Imagen 2">
+                <p>Rack</p>
+              </div>
+              <div class="imagen-placeholder swiper-slide">
+                <img src="./assets/img/sectores/telcos/gabinete.png" alt="Imagen 3">
+                <p>Gabinete de poste</p>
+              </div><!--
               <div class="imagen-placeholder swiper-slide">
                 <img src="img/gab1-2.png" alt="Imagen 4">
                 <p>Título 4</p>
               </div>
               -->
+            </div>
+
+            <div class="swiper-pagination"></div><br>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </section>
+
+          <div class="seccion-titulo">
+            <h2 class="title">UNA OPCIÓN INNOVADORA</h2>
+            <p class="description">
+              En Transformetal, fabricamos productos que aseguran tanto la eficiencia como la confiabilidad de las redes,
+              destacando las torres de comunicaciones y los equipos de transmisión. Nos mantenemos a la vanguardia a través de la incorporación
+              de técnicas avanzadas y soluciones innovadoras. Adaptamos nuestros productos a las nuevas demandas del sector de las telecomunicaciones,
+              lo cual garantiza la eficiencia.
+            </p>
+
+            <p class="description">
+              Además, nos preocupamos por el futuro y por eso, también implementamos prácticas sostenibles en cada una de las etapas de nuestra
+              producción. Transformetal, no sólo fabricamos productos de alta calidad, sino que también nos aseguramos de que nuestros procesos
+              construyan un entorno más verde.
+            </p>
           </div>
 
-          <div class="swiper-pagination"></div><br>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <section class="contenedor-beneficios">
+            <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
+
+            <div class="beneficio">
+              <div class="beneficio-icono"><img src="./assets/img/sectores/sector/lapiz.png" alt=""></div>
+              <div class="beneficio-titulo">SOLUCIONES INNOVADORAS</div>
+              <div class="beneficio-texto">Nuestros ingenieros y arquitectos de diseño trabajan con usted para crear el ideal desarrollo de productos para sus proyectos.</div>
+            </div>
+            <div class="beneficio">
+              <div class="beneficio-icono"><img src="./assets/img/sector/icono_bombilla.png" alt=""></div>
+              <div class="beneficio-titulo">OPERACIÓN Y LOGÍSTICA</div>
+              <div class="beneficio-texto">Fabricamos sus productos con una precisión excepcional y entregamos sus productos a tiempo.</div>
+            </div>
+            <div class="beneficio">
+              <div class="beneficio-icono"><img src="./assets/img/sectores/sector/T_3compromiso_ambiental.png" alt=""></div>
+              <div class="beneficio-titulo">COMPROMISO AMBIENTAL</div>
+              <div class="beneficio-texto">Implementamos prácticas sostenibles en nuestros procesos de producción, contribuyendo a un futuro más verde.</div>
+            </div>
+
+
+
+          </section>
+
+          <section class="linea-final"></section>
         </section>
-
-
-        <div class="seccion-titulo">
-          <h2 class="title">UNA OPCIÓN INNOVADORA</h2>
-          <p class="description">
-            En Transformetal, fabricamos productos que aseguran tanto la eficiencia como la confiabilidad de las redes,
-            destacando las torres de comunicaciones y los equipos de transmisión. Nos mantenemos a la vanguardia a través de la incorporación
-            de técnicas avanzadas y soluciones innovadoras. Adaptamos nuestros productos a las nuevas demandas del sector de las telecomunicaciones,
-            lo cual garantiza la eficiencia.
-          </p>
-          <br>
-          <p class="description">
-            Además, nos preocupamos por el futuro y por eso, también implementamos prácticas sostenibles en cada una de las etapas de nuestra
-            producción. Transformetal, no sólo fabricamos productos de alta calidad, sino que también nos aseguramos de que nuestros procesos
-            construyan un entorno más verde.
-          </p>
-        </div>
-        <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
-        <section class="contenedor-beneficios">
-
-          <div class="beneficio">
-            <div class="beneficio-icono"><img src="./assets/img/sectores/sector/T_1calidad_superior.png" alt=""></div>
-            <div class="beneficio-titulo">CALIDAD SUPERIOR</div>
-            <div class="beneficio-texto">Utilizamos materiales de primera y técnicas avanzadas para ofrecer productos que cumplen con los más altos estándares de la industria.</div>
-          </div>
-          <div class="beneficio">
-            <div class="beneficio-icono"><img src="./assets/img/sectores/sector/T_2innovacion_continua.png" alt="" id="icon"></div>
-            <div class="beneficio-titulo">INNOVACIÓN CONTINUA</div>
-            <div class="beneficio-texto">Nos mantenemos a la vanguardia de las tendencias tecnológicas, adaptando nuestras soluciones a las necesidades cambiantes del sector.</div>
-          </div>
-          <div class="beneficio">
-            <div class="beneficio-icono"><img src="./assets/img/sectores/sector/T_3compromiso_ambiental.png" alt=""></div>
-            <div class="beneficio-titulo">COMPROMISO AMBIENTAL</div>
-            <div class="beneficio-texto">Implementamos prácticas sostenibles en nuestros procesos de producción, contribuyendo a un futuro más verde.</div>
-          </div>
-
-        </section>
-
-        <section class="linea-final"></section>
-
-      </section>
-      <!--Telecomunicaciones Fin-->
-
 
       <!--Electrica Inicio-->
       <section class="sectores" id="Electrico">
@@ -265,7 +275,11 @@
               por un equipo técnico especializado que te asesora en cada etapa. Con 22
               nosotros, su proyecto está en manos expertas.
             </p>
-            <a href="#" class="button">Ver Productos</a>
+            <center>
+              <a href="public/electrico/" class="VerProduct">
+                <p>Ver Productos</p>
+              </a>
+            </center>
           </div>
         </div>
 
@@ -313,22 +327,22 @@
           </p>
 
         </div>
-        <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
-        <section class="contenedor-beneficios">
 
+        <section class="contenedor-beneficios">
+          <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/electricidad/servicio_personalizado.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">PRODUCTOS INTEGRADOS</div>
+            <div class="beneficio-titulo">PRODUCTOS INTEGRADOS</div>
             <div class="beneficio-texto">Diseñamos y construimos productos eléctricos y electrónicos protegidos con gabinetes y cajas en metalmecánica, fabricados y adecuados a sus necesidades.</div>
           </div>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/electricidad/tecnologia_innovadora.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">INNOVACIÓN CONTINUA</div>
+            <div class="beneficio-titulo">INNOVACIÓN CONTINUA</div>
             <div class="beneficio-texto">Contamos con 1000 m² de planta de producción. Orgullosamente somos una planta de metalmecánica 100% guatemalteca.</div>
           </div>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/electricidad/soporte_tecnico.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">maquinaria DE ÚLTIMA GENERACIÓN</div>
+            <div class="beneficio-titulo">maquinaria DE ÚLTIMA GENERACIÓN</div>
             <div class="beneficio-texto" style="margin-top: -10px;">Generación de corte CNC láser, dobladora inteligente y soldadura láser. Fabricamos sus productos con maquinaria rápida y precisa.</div>
           </div>
 
@@ -356,7 +370,11 @@
               las necesidades específicas de cada espacio urbano, ofreciendo productos personalizados
               que reflejan el carácter único de cada ciudad..
             </p>
-            <a href="#" class="button">Ver Productos</a>
+            <center>
+              <a href="public/mobiliario/" class="VerProduct">
+                <p>Ver Productos</p>
+              </a>
+            </center>
           </div>
         </div>
 
@@ -402,22 +420,22 @@
           </p>
 
         </div>
-        <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
-        <section class="contenedor-beneficios">
 
+        <section class="contenedor-beneficios">
+          <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/Mobiliario/M1_durabilidad.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">DURABILIDAD</div>
+            <div class="beneficio-titulo">DURABILIDAD</div>
             <div class="beneficio-texto">Fabricados con materiales de alta resistencia, nuestros productos están diseñados para soportar las inclemencias del tiempo y el uso constante.</div>
           </div>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/Mobiliario/M2_estetica.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">ESTÉTICA</div>
+            <div class="beneficio-titulo">ESTÉTICA</div>
             <div class="beneficio-texto">Con una variedad de diseños y acabados, nuestras soluciones no solo son funcionales, sino que también embellecen el paisaje urbano.</div>
           </div>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/Mobiliario/M3_sostenibilidad.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">SOSTENIBILIDAD</div>
+            <div class="beneficio-titulo">SOSTENIBILIDAD</div>
             <div class="beneficio-texto">Promovemos prácticas responsables al ofrecer productos que contribuyen a un entorno más limpio y saludable.</div>
           </div>
 
@@ -442,7 +460,11 @@
 
             </p>
 
-            <a href="#" class="button">Ver Productos</a>
+            <center>
+              <a href="public/almacenaje/" class="VerProduct">
+                <p>Ver Productos</p>
+              </a>
+            </center>
           </div>
         </div>
 
@@ -488,22 +510,22 @@
           </p>
 
         </div>
-        <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
-        <section class="contenedor-beneficios">
 
+        <section class="contenedor-beneficios">
+          <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/Exhibicion/E1_calidad_superior.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">VERSATILIDAD</div>
+            <div class="beneficio-titulo">VERSATILIDAD</div>
             <div class="beneficio-texto">Ofrecemos una amplia gama de diseños adaptables a cualquier tipo de producto y espacio, asegurando que cada exhibición resalte lo mejor de su oferta.</div>
           </div>
           <div class="beneficio">
-            <div class="beneficio-icono"><img src="./assets/img/sectores/Exhibicion/E2_versatilidad.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">CALIDAD</div>
+            <div class="beneficio-icono"><img src="./assets/img/sectores/Exhibicion/icono_calidad_prueba.png"  alt=""></div>
+            <div class="beneficio-titulo">CALIDAD</div>
             <div class="beneficio-texto">Nuestras estructuras están fabricadas con materiales de alta calidad, lo que garantiza que puedan soportar el uso del día a día.</div>
           </div>
           <div class="beneficio">
             <div class="beneficio-icono"><img src="./assets/img/sectores/Exhibicion/E3_optimizacion.png" alt=""></div>
-            <div class="beneficio-titulo" id="elctr">PUESTA A PUNTO EN PLANTA</div>
+            <div class="beneficio-titulo">PUESTA A PUNTO EN PLANTA</div>
             <div class="beneficio-texto">Integramos una selección de productos con sus requisitos específicos para ofrecerle una solución única y personalizada.</div>
           </div>
 
@@ -516,182 +538,83 @@
 
 
       <section class="sectores">
-        <h2 class="tld"> <img src="./assets/img/sectores/textoFInal}.png" alt="" style="width:600px; height:200px;"></h2>
-        <p class="descripcion" style="margin-top: -70px;">
-          Transformamos sus ideas en realidad, acompañándolo desde el diseño hasta el desarrollo de cualquier producto
-          en metalmecánica. Contáctenos hoy y descubra cómo nuestras soluciones personalizadas pueden impulsar el crecimiento
-          y éxito de su negocio.
-
-
-
+        <h2 class="titulo"> el límite lo pones tú</h2>
+        <p class="descripcion">
+          Transformamos tus ideas en realidad, acompañándote desde el diseño hasta el
+          desarrollo de cualquier producto en metalmecánica. Contáctanos hoy y descubre
+          cómo nuestras soluciones personalizadas pueden impulsar el crecimiento y éxito
+          de tu negocio.
         </p>
-        <a href="#" class="ContactoNuevo">Contáctenos</a>
-
+        <center>
+          <a href="contacto.php" class="VerProduct">
+            <p>Contáctenos</p>
+          </a>
+        </center>
       </section>
 
-
-
     </div>
-
-
 
 
     <!--chatbot Inicio-->
-    <!--chatbot de whatsapp-->
-    <div class="message-wrapper">
-      <div class="message-toggle">
-        <a href="https://api.whatsapp.com/send/?phone=50237673705&type=phone_number&app_absent=0" target="_blank">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-
-      </div>
-    </div>
-    <!--whatsapp Fin-->
-
-    <!--Chat Incio-->
-    <!-- Chat bot UI start -->
-    <div class="chat-screen">
-      <div class="chat-header">
-        <div class="chat-header-title">Asistente Transformetal</div>
-      </div>
-      <!-- Prueba de chatbot pedido de datos inicio -->
-      <form id="chat-form" method="POST" action="">
-        <div class="chat-mail">
-          <div class="row">
-            <div class="chat-description">
-              <p style="font-size: 14px; top:-50px;">
-                Bienvenido/a. Estamos aquí para atenderle de la mejor manera posible.
-                Por favor, proporcione la siguiente información para comenzar.
-              </p>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <input
-                  style="width: 280px;  height:30px;"
-                  required
-                  type="text"
-                  class="form-control input-nombre"
-                  placeholder="Ingrese su nombre..."
-                  name="nombre" />
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <input
-                  style="width: 280px;  height:30px;"
-                  required
-                  type="email"
-                  class="form-control input-email"
-                  placeholder="Ingrese su correo electronico..."
-                  name="email" />
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <input
-                  style="width: 280px;  height:30px;"
-                  required
-                  type="number"
-                  class="form-control input-telefono"
-                  placeholder="Ingrese su numero telefonico..."
-                  name="telefono" />
-              </div>
-            </div>
-            <div class="col-md-12 btn">
-              <center>
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-form">
-                  Iniciar
-                </button>
-              </center>
-            </div>
-          </div>
-
-
-        </div>
-
-        <!-- Este es el nuevo div que se activará con un botón -->
-        <div id="activate-chat-body" class="chat-body hide" style="display: none;">
-          <!-- Aquí irán los mensajes del chat -->
-        </div>
-        <div class="chat-input hide" style="display: none;">
-          <input
-            type="text"
-            placeholder="Escriba su mensaje..."
-            id="user-input"
-            name="user-input" />
-          <div class="input-action-icon">
-            <a id="send-message">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-send"
-                id="enviar">
-                <line x1="22" y1="2" x2="11" y2="13"></line>
-                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-              </svg>
-            </a>
-          </div>
-
-        </div>
-      </form>
-    </div>
-    <div class="chat-bot-icon">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-message-square animate">
-        <path
-          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-x">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </div>
-    <!-- Chat Bot UI Ends -->
-    <!--Chat FIn-->
+    <?php include './views/inc/chatbot.php'; ?>
 
     <!--Chatbot Fin-->
-
-
 
 
     <div id="loader">
       <div class="spinner"></div>
     </div>
+    <footer class="footer-container">
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="./assets/img/Logo_Azul.png" alt="Transformetal Logo">
+				</div>
+				<p class="footer-description">
+					Transformetal es una empresa líder en metalmecánica, especializada en la transformación y
+					fabricación de productos metálicos de alta calidad.
+				</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/people/Transformetal/61556439127740/?locale=es_LA" class="social-icon facebook" style=" background: url('./assets/img/icon/footer/fb.png') no-repeat center/cover;" target="_blank"></a>
+					<a href="https://api.whatsapp.com/send/?phone=50237673973&type=phone_number&app_absent=0" class="social-icon whatsapp" style=" background: url('./assets/img/icon/footer/wsp.png') no-repeat center/cover;" target="_blank"></a>
+					<a href="https://www.instagram.com/transformetalgt/" class="social-icon instagram" style=" background: url('./assets/img/icon/footer/ig.png') no-repeat center/cover;" target="_blank"></a>
+					<a href="https://www.youtube.com/@TransformetalGT" class="social-icon youtube" style=" background: url('./assets/img/icon/footer/yt.png') no-repeat center/cover;" target="_blank"></a>
+					<a href="tel:37673973" class="contact-icon phone">3767-3973 / 5695-2444</a>
+					<a href="mailto:contacto@transformetalgt.com" class="contact-icon email">contacto@transformetalgt.com</a>
+				</div>
+			</div>
+			<style>
+        .footer-container{
+          margin-top: -200px;
+        }
+				.contact-icon.phone::before {
+					content: "";
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					background-image: url('./assets/img/icon/footer/cel.png');
+					background-size: cover;
+					margin-right: 5px;
+				}
+
+				.contact-icon.email::before {
+					content: "";
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					background-image: url('./assets/img/icon/footer/email.png');
+					background-size: cover;
+					margin-right: 5px;
+				}
+			</style>
+			<div class="footer-bottom">
+				<p>©Transformetal 2025. <a href="" class="privacy-link">Todos los derechos reservados</a></p>
+				<a href="#" class="privacy-link">Política de privacidad</a>
+			</div>
+		</footer>
+
 
 
     <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
-
     <script src="assets/js/menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

@@ -5,15 +5,24 @@ if ($connect->connect_error) {
     die("Conexión fallida: " . $connect->connect_error);
 }
 
-// Modificar la consulta SQL para filtrar solo productos activos
-$sql = "SELECT * FROM productos WHERE estado = 'Activo'";
+// Configuración de la paginación
+$productos_por_pagina = 10; // Número de productos por página
+$pagina_actual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+$inicio = ($pagina_actual > 1) ? ($pagina_actual * $productos_por_pagina) - $productos_por_pagina : 0;
+
+// Modificar la consulta SQL para filtrar solo productos activos con paginación
+$sql = "SELECT * FROM productos WHERE estado = 'Activo' LIMIT $inicio, $productos_por_pagina";
 $result = $connect->query($sql);
+
+// Calcular el total de productos activos
+$sql_total_productos = "SELECT COUNT(*) as total FROM productos WHERE estado = 'Activo'";
+$result_total_productos = $connect->query($sql_total_productos);
+$total_productos_db = $result_total_productos->fetch_assoc()['total'];
+$total_paginas = ceil($total_productos_db / $productos_por_pagina);
 
 // Definir la URL base para las imágenes y archivos
 $base_url = "http://localhost/transformetal/app/app/app/";
 ?>
-
-
 <div class="container">
     <h1 class="titulo">Lista de Productos</h1>
 
@@ -37,7 +46,7 @@ $base_url = "http://localhost/transformetal/app/app/app/";
         </thead>
         <tbody>
             <?php
-            $contador = 1;
+            $contador = $inicio + 1; // Ajustar el contador según la página actual
             while ($row = $result->fetch_assoc()) {
             ?>
                 <tr>
@@ -81,4 +90,34 @@ $base_url = "http://localhost/transformetal/app/app/app/";
             <?php } ?>
         </tbody>
     </table>
+
+    <!-- Paginación -->
+    <?php if ($total_paginas > 1): ?>
+        <nav aria-label="Navegación de páginas">
+            <ul class="pagination justify-content-center">
+                <!-- Anterior -->
+                <li class="page-item <?php echo $pagina_actual <= 1 ? 'disabled' : ''; ?>">
+                    <a class="page-link" href="?pagina=<?php echo $pagina_actual - 1; ?>">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+
+                <!-- Números de página -->
+                <?php for ($i = 1; $i <= $total_paginas; $i++): ?>
+                    <li class="page-item <?php echo $pagina_actual == $i ? 'active' : ''; ?>">
+                        <a class="page-link" href="?pagina=<?php echo $i; ?>">
+                            <?php echo $i; ?>
+                        </a>
+                    </li>
+                <?php endfor; ?>
+
+                <!-- Siguiente -->
+                <li class="page-item <?php echo $pagina_actual >= $total_paginas ? 'disabled' : ''; ?>">
+                    <a class="page-link" href="?pagina=<?php echo $pagina_actual + 1; ?>">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    <?php endif; ?>
 </div>
