@@ -232,7 +232,7 @@ $base_url = "http://localhost/transformetal/app/app/";
           <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
         </ul>
         <!-- Barra de búsqueda actualizada -->
-        <form class="search-form" action="" method="get">
+        <form class="search-form" action="../../busqueda/" method="get">
           <input type="search" name="query" placeholder="Buscar..." required>
           <button class="btn-search" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>

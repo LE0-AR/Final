@@ -133,12 +133,12 @@
             <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
           </ul>
           <!-- Barra de búsqueda actualizada -->
-          <form class="search-form" action="./public/products/busqueda.php" method="get">
-            <input type="search" name="query" placeholder="Buscar..." required>
-            <button class="btn-search" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
+          <form class="search-form" action="./public/busqueda/" method="get">
+						<input type="search" name="query" placeholder="Buscar..." required>
+						<button class="btn-search" type="submit">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
 
           <!--<i class="fas fa-shopping-cart" style="color: #fff; font-size: 25px; cursor: pointer;"></i>-->
           <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>

@@ -1,10 +1,17 @@
 <?php
 include '../../views/inc/conection.php';
 
+$categorias = [
+  'GABINETES' => [
+    'id' => 'gabinetes',
+    'titulo' => 'Productos de Transformetal',
+    'descripcion' => 'En Transformetal, ofrecemos productos de metal de alta calidad, fabricados con materias primas seleccionadas cuidadosamente y diseñados para cumplir con los más altos estándares de durabilidad y eficiencia. Nuestra prioridad es brindar soluciones que se adapten a sus necesidades con excelencia y confianza.',
+    'icono' => '../../assets/img/iconosProductos/Telcos/gabinetes.png'
+  ]
+];
 
 
-
-$base_url = "http://localhost/transformetal/app/app/";
+$base_url = "https://transformetalgt.com/app/app/";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -24,7 +31,7 @@ $base_url = "http://localhost/transformetal/app/app/";
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link rel="stylesheet" href="../../css/Gabitenes.css">
+  <link rel="stylesheet" href="../../public//css/Gabitenes.css">
 </head>
 <style>
   .category-nav {
@@ -68,10 +75,10 @@ $base_url = "http://localhost/transformetal/app/app/";
   }
 </style>
 
-<body>  
+<body>
   <header id="header">
 
-    <div class="container-hero  position: fixed;">
+    <div class="container-hero ">
       <div class="container hero">
         <div class="customer-support">
           <i class=""></i>
@@ -82,7 +89,7 @@ $base_url = "http://localhost/transformetal/app/app/";
         </div>
         <div class="container-logo">
           <a href="../../">
-            <i><img src="../../../assets/img/logot.png" alt="100px" style="width: 500px; height: 100px; "></i>
+            <i><img src="../../assets/img/logot.png" alt="100px"></i>
 
           </a>
         </div>
@@ -106,58 +113,50 @@ $base_url = "http://localhost/transformetal/app/app/";
             <a href="#" id="productos-link" class="TituloMenu">Productos</a>
             <ul class="nav-menu" id="productos-submenu">
               <li>
-                <a href="#" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
+                <a href="public/products/Telcos/" class="main-category">Telecomunicaciones e IT<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
                 <ul class="nav-submenu ">
-                  <li><a href="productos.php">Gabinetes</a></li>
-                  <li><a href="productos.php#section2">Racks</a></li>
-                  <li><a href="productos.php#section9">Bandejas</a></li>
-                  <li><a href="productos.php#section3-1">Riel</a></li>
-                  <li><a href="productos.php#section4-1">Escalerilla</a></li>
-                  <li><a href="productos.php#section85">Planta Externa</a></li>
-                  <li><a href="productos.php#section85">Planta Interna</a></li>
-                  <li><a href=""></a></li>
+                  <li><a href="../../public/products/Telcos/index.php#gabinetes">Gabinetes</a></li>
+                  <li><a href="../../public/products/Telcos/index.php#racks">Racks</a></li>
+                  <li><a href="../../public/products/Telcos/index.php#bandejas">Bandejas</a></li>
+                  <li><a href="../../public/products/Telcos/index.php#rieles">Riel</a></li>
+                  <li><a href="../../public/products/Telcos/index.php#escalerillas">Escalerilla</a></li>
+                  <li><a href="../../public/products/Telcos/index.php#planta_externa">Planta Externa</a></li>
+                  <li><a href="../../public/products/Telcos/index.php#planta_interna">Planta Interna</a></li>
+
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Planta Externa y Electricidad<i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
                 <ul class="nav-submenu plantaExterna">
-                  <li><a href="productos.php">Gabinetes</a></li>
-                  <li><a href="productos.php#section50">Cajas</a></li>
-                  <li><a href="productos.php#section70">Herrajes</a></li>
+                  <li><a href="../../public/products/Electricidad/index.php#gabinetes">Gabinetes</a></li>
+                  <li><a href="../../public/products/Electricidad/index.php#cajas">Cajas</a></li>
+                  <li><a href="../../public/products/Electricidad/index.php#soportes_herrajes">Soportes y Herrajes</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Exhibición y Almacenes <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
                 <ul class="nav-submenu Almacenes">
-                  <li><a href="productos.php#Gondolas">Góndolas </a></li>
-                  <li><a href="productos.php#Estanteria">Estanterías </a></li>
-                  <li><a href="productos.php#RackIndustrial">Racks Industrial</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="main-category">Arquitectónicos y Panales Decorativos <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-                <ul class="nav-submenu paneles">
-                  <li><a href="productos.php#Arquitectonicos">Paneles decorativos</a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                  <li><a href="../../public/products/almacenaje/index.php#Gondolas">Góndolas </a></li>
+                  <li><a href="../../public/products/almacenaje/index.php#estanterias">Estanterías </a></li>
+                  <li><a href="../../public/products/almacenaje/index.php#Rack_Industrial">Racks Industrial</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Mobiliario Urbano <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-                <ul class="nav-submenu Mobiliario">
-                  <li><a href="productos.php#Mobiliario">Basureros</a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                <ul class="nav-submenu paneles">
+                  <li><a href="../../public/products/Mobiliario/index.php#Basureros">Basureros </a></li>
+                  <li><a href="../../public/products/Mobiliario/index.php#Paneles">Paneles decorativos</a></li>
+                  <li><a href="../../public/products/Mobiliario/index.php#Mupis">Mupis </a></li>
                 </ul>
               </li>
               <li>
                 <a href="#" class="main-category">Torres <i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></a>
-                <ul class="nav-submenu TorresIrios">
-                  <li><a href="./productos.php#section25">Torres Arriostradas y Accesorios</a></li>
-                  <li><a href="./control/">Instalacion de torre arriostrada</a></li>
-                  <li><a href="./control/SistemaTierra.php">Sistemas de puesta a tierra</a></li>
-                  <li><a href="./control/pararrayos.php">Sistema de pararrayos y baliza </a></li>
-
+                <ul class="nav-submenu Mobiliario">
+                  <li><a href="../../public/products/Torre/index.php#Secciones">Torres Arriostradas</a></li>
+                  <li><a href="../../public/products/Torre/index.php#Accesorios">Accesorios para torres</a></li>
+                  <li><a href="../../control/">Instalacion de torre arriostrada</a></li>
+                  <li><a href="../../control/SistemaTierra.php">Sistemas de puesta a tierra</a></li>
+                  <li><a href="../../control/pararrayos.php">Sistema de pararrayos y baliza </a></li>
                 </ul>
               </li>
             </ul>
@@ -170,32 +169,26 @@ $base_url = "http://localhost/transformetal/app/app/";
           <li id="nav2">
             <a href="#" id="industrias-link" class="TituloMenu">Sectores</a>
             <ul class="nav-menu" id="industrias-submenu">
-              <li><a href="industrias.php#telecom">Telecomunicaciones</a></li>
-              <li><a href="industrias.php#Electrico">Electricidad</a></li>
-              <li><a href="industrias.php#Mobiliario">Mobiliario Urbano</a></li>
-              <li><a href="industrias.php#Exhibicion">Exhibición y Almacenaje </a></li>
+              <li><a href="../../industrias.php#telecom">Telecomunicaciones</a></li>
+              <li><a href="../../industrias.php#Electrico">Electricidad</a></li>
+              <li><a href="../../industrias.php#Mobiliario">Mobiliario Urbano</a></li>
+              <li><a href="../../industrias.php#Exhibicion">Exhibición y Almacenaje </a></li>
             </ul>
           </li>
 
           <li id="nav2">
-            <a href="maquinaria.php" id="servicios-link" class="TituloMenu">Maquinaria</a>
+            <a href="../../maquinaria.php" id="servicios-link" class="TituloMenu">Maquinaria</a>
           </li>
 
           <li>
-            <a href="#" id="nosotros-link" class="TituloMenu">Nosotros</a>
-            <ul class="nav-menu" id="nosotros-submenu">
-              <li><a href="./public/Nosotros/">Nosotros</a></li>
-              <li><a href="nosotros.php#staff">Equipo de gestión administrativa y comercial</a></li>
-              <li><a href="#">Planta de Transformetal</a></li>
-              <li><a href="#">Política de calidad</a></li>
-              <li><a href="#">Responsabilidad Social Empresarial</a></li>
-            </ul>
+            <a href="../../public/Nosotros/" id="nosotros-link" class="TituloMenu">Nosotros</a>
+
           </li>
-          <li><a href="./contacto.php" class="TituloMenu">Contacto</a></li>
+          <li><a href="../../contacto.php" class="TituloMenu">Contacto</a></li>
           <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
         </ul>
         <!-- Barra de búsqueda actualizada -->
-        <form class="search-form" action="busqueda.php" method="get">
+        <form class="search-form" action="" method="get">
           <input type="search" name="query" placeholder="Buscar..." required>
           <button class="btn-search" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -207,67 +200,89 @@ $base_url = "http://localhost/transformetal/app/app/";
       </nav>
     </div>
     <!--menu fin -->
+
   </header>
 
   <div class="section-main">
+
+    <!-- Navegación de categorías -->
+    <div class="category-nav">
+      <?php foreach ($categorias as $categoria => $info): ?>
+        <a href="#<?php echo $info['id']; ?>"
+          class="category-link"
+          data-category="<?php echo $info['id']; ?>">
+          <?php echo $info['titulo']; ?>
+        </a>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+
+      <!--gaurdar el local storage y que me devuela a al ultima pagina-->
+      <a href="../../index.php">Inicio ></a>
+      <span class="active" id="breadcrumb-text"></span>
+    </nav>
+
     <?php
+    // Si se ha enviado una búsqueda
     if (isset($_GET['query']) && !empty($_GET['query'])) {
       $busqueda = mysqli_real_escape_string($connect, $_GET['query']);
-      
-      $query = "SELECT * FROM productos 
-                WHERE estado = 'Activo' 
-                AND (nombre LIKE ? 
-                OR descripcion LIKE ? 
-                OR categoria LIKE ? 
-                OR sector LIKE ?)";
-      
-      $stmt = mysqli_prepare($connect, $query);
-      
-      if ($stmt) {
-        $termino = "%{$busqueda}%";
-        mysqli_stmt_bind_param($stmt, "ssss", $termino, $termino, $termino, $termino);
-        mysqli_stmt_execute($stmt);
-        $resultado = mysqli_stmt_get_result($stmt);
-        
-        if (mysqli_num_rows($resultado) > 0) {
-          echo "<h2>Resultados de búsqueda para: " . htmlspecialchars($busqueda) . "</h2>";
-          echo "<div class='product-list'>";
-          
-          while ($row = mysqli_fetch_assoc($resultado)) {
-            $hash = md5($row['id'] . 'transformetal');
-            ?>
-            <div class="product-card">
-              <img src="<?php echo $base_url; ?>Control/<?php echo htmlspecialchars($row['imagen_principal']); ?>"
-                   alt="<?php echo htmlspecialchars($row['nombre']); ?>">
-              <h3><?php echo htmlspecialchars($row['nombre']); ?></h3>
-              <p class="category"><?php echo htmlspecialchars($row['categoria']); ?></p>
-              <div class="center">
-                <a href="../products/detalle.php?id=<?php echo urlencode($hash); ?>" 0
-                   class="cotizas">Ver producto</a>
-              </div>
-            </div>
-            <?php
-          }
-          echo "</div>";
-        } else {
-          echo "<div class='no-results'>
-                  <h2>No se encontraron resultados para: " . htmlspecialchars($busqueda) . "</h2>
-                  <p>Intente con otros términos de búsqueda</p>
-                </div>";
-        }
-        
-        mysqli_stmt_close($stmt);
+      $resultados = [];
+
+      // Buscar por cada categoría
+      foreach ($categorias as $categoria => $info) {
+        $id_categoria = $info['id'];
+        $sql =
+          "SELECT * FROM productos 
+              WHERE estado = 'Activo'
+              AND (nombre LIKE '%$busqueda%')";
+        $consulta = mysqli_query($connect, $sql);
+        $resultados[$id_categoria] = $consulta;
       }
-    } else {
-      echo "<div class='no-query'>
-              <h2>Realice una búsqueda</h2>
-              <p>Ingrese un término en el buscador</p>
-            </div>";
     }
     ?>
+
+    <?php foreach ($categorias as $categoria => $info): ?>
+      <section id="<?php echo $info['id']; ?>"
+        class="product-section"
+        style="display: none;">
+        <div class="product-header">
+          <h1 class="title-Product"><?php echo $info['titulo']; ?></h1>
+          <p class="description"><?php echo $info['descripcion']; ?></p>
+        </div>
+
+        <div class="product-list">
+          <?php
+          if (!empty($resultados[$info['id']]) && mysqli_num_rows($resultados[$info['id']]) > 0):
+            while ($row = mysqli_fetch_assoc($resultados[$info['id']])):
+              $hash = md5($row['id'] . 'transformetal');
+          ?>
+              <div class="product-card">
+                <img src="<?php echo $base_url; ?>Control/<?php echo htmlspecialchars($row['imagen_principal']); ?>"
+                  alt="<?php echo htmlspecialchars($row['nombre']); ?>">
+                <h3><?php echo htmlspecialchars($row['nombre']); ?></h3>
+                <div class="center">
+                  <a href="detalle.php?id=<?php echo urlencode($hash); ?>" class="cotizas">
+                    <p>Ver producto</p>
+                  </a>
+                </div>
+              </div>
+            <?php
+            endwhile;
+          else:
+            ?>
+            <div class="no-results">
+              <h2>No se encontraron productos para "<?php echo htmlspecialchars($_GET['query']); ?>"</h2>
+              <p>Intente buscar con otros términos o explore nuestras categorías.</p>
+            </div>
+          <?php endif; ?>
+        </div>
+      </section>
+    <?php endforeach; ?>
   </div>
 
-  
+
   <div id="loader">
     <div class="spinner"></div>
   </div>
@@ -375,6 +390,7 @@ $base_url = "http://localhost/transformetal/app/app/";
       <a href="#" class="privacy-link">Política de privacidad</a>
     </div>
   </footer>
+
   <script src="../../../assets/js/menu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
