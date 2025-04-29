@@ -131,7 +131,7 @@
           <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
         </ul>
         <!-- Barra de búsqueda actualizada -->
-        <form class="search-form" action="../../public/busqueda/" method="get">
+        <form class="search-form" action="../busqueda/" method="get">
 						<input type="search" name="query" placeholder="Buscar..." required>
 						<button class="btn-search" type="submit">
 							<i class="fa-solid fa-magnifying-glass"></i>
@@ -241,14 +241,13 @@
   </div>
 
 
-  <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
-
+  <script src="https://kit.fontawesome.com/9f5db648e8.js" crossorigin="anonymous"></script>
   <script src="../../assets/js/menu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="../../assets/js/popper.min.js"></script>
   <script src="../../assets/js/jquery-3.2.1.js"></script>
-  <script src="../../assets/js/select2.min.js"></script>
+  <script src="../../assets/js/select2.min.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="../../assets/js/chat.js"></script>
 </body>

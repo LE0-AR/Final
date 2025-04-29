@@ -314,16 +314,6 @@ html {
   line-height: 1.5;
 }
 /*mantener el margen de la tarjeta */
-@media (max-width: 1300px) {
-  .contenedor-beneficios {
-    flex-wrap: nowrap;
-  }
-}
-@media (max-width: 960px) {
-  .contenedor-beneficios {
-    flex-wrap: wrap;
-  }
-}
 
 
 /*Nuevo*/
@@ -432,3 +422,112 @@ html {
 .swiper-pagination {
   margin-top: 0;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .section {
+    margin: 250px 50px;
+  }
+  
+  .imagen {
+    width: 500px;
+    height: 450px;
+  }
+  
+  .descripcion {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section {
+    margin: 200px 30px;
+  }
+  
+  .sector {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .imagen {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 0;
+  }
+  
+  .contenido {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .titulo, .tld {
+    font-size: 36px;
+  }
+  
+  .subtitulo {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin: 180px 20px;
+  }
+  
+  .titulo, .tld {
+    font-size: 32px;
+  }
+  
+  .descripcion {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  
+  .texto {
+    font-size: 14px;
+  }
+  
+  .Media {
+    width: 100%;
+    margin-left: -50%;
+  }
+  
+  .Media p {
+    font-size: 24px;
+  }
+  
+  .beneficio {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    margin: 250px 10px;
+  }
+  
+  .titulo, .tld {
+    font-size: 28px;
+  }
+  
+  .subtitulo {
+    font-size: 24px;
+  }
+  
+  .imagen-placeholder {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .beneficio-titulo {
+    font-size: 24px;
+  }
+  
+  .beneficio-texto {
+    font-size: 14px;
+  }
+}
+
+/*css*/

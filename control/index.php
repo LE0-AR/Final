@@ -41,7 +41,7 @@
 					</div>
 					<div class="container-logo">
 						<a href="../">
-							<i><img src="../assets/img/logot.png"  class="logoTipo"></i>
+							<i><img src="../assets/img/logot.png" class="logoTipo"></i>
 
 						</a>
 					</div>
@@ -467,32 +467,3 @@
 	</body>
 
 	</html>
-	<?php
-
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		$nombre = $_POST["nombre"] ?? '';
-		$email = $_POST["email"] ?? '';
-		$telefono = $_POST["telefono"] ?? '';
-		$mensaje = $_POST["user-input"] ?? '';
-
-		$destinatario = "ismaelaspuacr.5@gmail.com";
-		$asunto = "Nuevo mensaje de $email";
-
-		$contenido = "Nombre: $nombre \n";
-		$contenido .= "Email: $email \n";
-		$contenido .= "Teléfono: $telefono \n";
-		$contenido .= "Mensaje: $mensaje";
-
-		$header = "From: no-reply@transformetalgt.com\r\n";
-		$header .= "Reply-To: $email\r\n";
-		$header .= "X-Mailer: PHP/" . phpversion();
-
-		if (mail($destinatario, $asunto, $contenido, $header)) {
-			http_response_code(200);
-			echo "Correo enviado exitosamente.";
-		} else {
-			http_response_code(500);
-			echo "Error al enviar el correo.";
-		}
-	}
-	?>

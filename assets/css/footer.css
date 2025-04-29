@@ -26,7 +26,8 @@
 }
 
 .footer-logo img {
-    max-width: 50%;
+    max-width: 100%;
+    max-height: auto;
 }
 
 .footer-logo h2 {

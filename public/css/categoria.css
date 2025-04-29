@@ -15,7 +15,7 @@ body {
   background-color: #fff;
   margin: 150px;
 }
-/*Prodcutos nas ve*/
+/*Prodcutos nas venddo */
 .productos-mas-vendidos {
   text-align: center;
   padding: 20px 0;
@@ -187,13 +187,6 @@ body {
   line-height: 1.6;
 }
 
-@media (max-width: 1500px) {
-  .content {
-    max-width: 30%;
-    top: 270px;
-  }
-}
-
 
 /*Video */
 /* Estilos generales */
@@ -338,7 +331,9 @@ body {
 }
 /*modo resposnive */
 
-/* Media queries para responsividad */
+/* MODO RESPONSIVE COMPLETO */
+
+/* 1440px */
 @media (max-width: 1440px) {
   .productos-mas-vendidos {
     padding: 20px 100px;
@@ -348,13 +343,14 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
   }
-  
+
   .Cinta {
     width: 60%;
     margin-left: -50%;
   }
 }
 
+/* 1024px */
 @media (max-width: 1024px) {
   .productos-mas-vendidos {
     padding: 20px 50px;
@@ -377,8 +373,20 @@ body {
   .producto h3 {
     font-size: 24px;
   }
+
+  .video-container {
+    width: 90%;
+    height: 400px;
+  }
+
+  .VideoTitulo h2 {
+    font-size: 36px;
+    width: 70%;
+    margin-left: -40%;
+  }
 }
 
+/* 768px */
 @media (max-width: 768px) {
   body {
     margin: 100px 0;
@@ -407,8 +415,79 @@ body {
     max-width: 200px;
     max-height: 200px;
   }
+
+  /* ABOUT */
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    max-width: 90%;
+    margin: 0 auto;
+    top: 200px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* CONTACTO */
+  .contact-container {
+    padding: 10px;
+  }
+
+  .contact-input-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .contact-input-group label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .contact-input-group input {
+    width: 100%;
+  }
+
+  .contact-full-width {
+    width: 100%;
+  }
+
+  .contact-full-width textarea {
+    width: 100%;
+  }
+
+  .titulcontacto h2 {
+    font-size: 32px;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 350px;
+  }
+
+  .VideoTitulo h2 {
+    font-size: 32px;
+    margin-left: -30%;
+  }
 }
 
+/* 480px */
 @media (max-width: 480px) {
   .productos-mas-vendidos {
     padding: 10px;
@@ -446,5 +525,60 @@ body {
 
   .VerProduct p {
     font-size: 14px;
+  }
+
+  /* ABOUT */
+  .about-section {
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+    top: 150px;
+    padding: 10px;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  /* CONTACTO */
+  .contact-container {
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .contact-input-group {
+    gap: 10px;
+  }
+
+  .contact-input-group input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-full-width textarea {
+    font-size: 14px;
+    height: 80px;
+  }
+
+  .titulcontacto h2 {
+    font-size: 28px;
+  }
+
+  /* VIDEO */
+  .video-container {
+    width: 100%;
+    height: 250px;
+  }
+
+  .VideoTitulo h2 {
+    font-size: 24px;
+    margin-left: -20%;
   }
 }

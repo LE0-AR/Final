@@ -118,3 +118,97 @@
   font-family: "Libre Franklin", sans-serif;
   text-align: center;
 }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .section, .seccion-identidad {
+    margin: 60px 40px;
+  }
+  
+  .inicio {
+    margin-top: 200px;
+  }
+  
+  .contenedor-mision-vision-valores {
+    flex-wrap: wrap;
+  }
+  
+  .bloque-mision,
+  .bloque-vision,
+  .bloque-valores {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section, .seccion-identidad {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+  
+  .titulo {
+    font-size: 36px;
+    padding: 15px;
+  }
+  
+  .descripcion {
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .contenedor-mision-vision-valores {
+    flex-direction: column;
+  }
+  
+  .bloque-mision,
+  .bloque-vision,
+  .bloque-valores {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .titulo-identidad {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inicio {
+    margin-top: 200px;
+  }
+  
+  .section, .seccion-identidad {
+    margin: 20px 10px;
+    padding: 10px;
+  }
+  
+  .titulo {
+    font-size: 36px;
+    padding: 10px;
+  }
+  
+  .descripcion {
+    font-size: 15px;
+    padding: 10px;
+  }
+  
+  .titulo-mision,
+  .titulo-vision,
+  .titulo-valores {
+    font-size: 30px;
+  }
+  
+  .texto-mision,
+  .texto-vision,
+  .texto-valores {
+    font-size: 15px;
+  }
+  
+  .icono-mision,
+  .icono-vision,
+  .icono-valores {
+    width: 80px;
+    height: 80px;
+  }
+}

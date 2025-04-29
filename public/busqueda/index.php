@@ -236,7 +236,12 @@ $base_url = "https://transformetalgt.com/app/app/";
         $sql =
           "SELECT * FROM productos 
               WHERE estado = 'Activo'
-              AND (nombre LIKE '%$busqueda%')";
+              AND (
+                nombre LIKE '%$busqueda%' OR
+                sector LIKE '%$busqueda%' OR
+                categoria LIKE '%$busqueda%' OR
+                descripcion LIKE '%$busqueda%'
+              )";
         $consulta = mysqli_query($connect, $sql);
         $resultados[$id_categoria] = $consulta;
       }

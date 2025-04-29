@@ -1,5 +1,5 @@
 <!-- Copyright 2024  TRANSFORMETAL-->
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="en">
 
 	<head>
@@ -23,13 +23,36 @@
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMR0EQ2J4K"></script>
 	</head>
 	<style>
+/* Slides con fondo por defecto */
+	.slide1 { background-image: url('assets/img/banner/banner1.png'); }
+	.slide2 { background-image: url('assets/img/banner/banner2.png'); }
+	.slide3 { background-image: url('assets/img/banner/banner3.png'); }
+	.slide4 { background-image: url('assets/img/banner/banner4.png'); }
+	.slide5 { background-image: url('assets/img/banner/banner5.png'); }
+	.slide6 { background-image: url('assets/img/banner/banner6.png'); }
+	.myslide { background-size: cover; background-position: center; }
 
+	/* Cambia la imagen de fondo en pantallas <= 600px */
+	@media (max-width: 992px) {
+	.slide1 { background-image: url('2.jpg'); }
+	}
+	.imgfondo {
+		content: url('./assets/img/banner/soldador2.png');
+	}
+
+	@media (max-width: 480px) {
+		.imgfondo {
+			content: url('./assets/img/banner/fondo_responsive.png');
+			height: 50%;
+			width: 100%;
+			object-fit: cover;
+			position: absolute;
+		}
+	}
 	</style>
-
 	<body>
 
 		<header id="header">
-
 			<div class="container-hero">
 				<div class="container hero">
 					<div class="customer-support">
@@ -40,9 +63,8 @@
 						</div>
 					</div>
 					<div class="container-logo">
-						<a href="./">
-							<i><img src="assets/img/logot.png" alt="100px" class="logoTipo"></i>
-
+						<a href="./" class="logo-link">
+							<img src="assets/img/logot.png" alt="Transformetal Logo" class="logoTipo">
 						</a>
 					</div>
 					<div class="container-user">
@@ -55,7 +77,6 @@
 					</div>
 				</div>
 			</div>
-
 			<!--MEnu Inicio-->
 			<div class="container-navbar">
 				<nav class="navbar container">
@@ -113,9 +134,7 @@
 								</li>
 							</ul>
 						</li>
-
 						<!--menu2-->
-
 						<!--menu2-->
 						<!--fin menu-->
 						<li id="nav2">
@@ -155,42 +174,24 @@
 		</header>
 
 		<!--CArrusel-->
-		<section>
-
-			<div class="myslide active" onclick="window.location.href='./public/Nosotros/';" style="background-image: url('assets/img/banner/banner1.png');"></div>
-
-
-			<div class="myslide active" onclick="window.location.href='./public/telcos/';" style="background-image: url('assets/img/banner/banner2.png');">
-
-			</div>
-
-			<div class="myslide active" onclick="window.location.href='./public/electrico/';" style="background-image: url('assets/img/banner/banner3.png'); ">
-
-			</div>
-			<div class="myslide active" onclick="window.location.href='./public/almacenaje/';" style="background-image: url('assets/img/banner/banner4.png');">
-
-			</div>
-			<div class="myslide active" onclick="window.location.href='./public/mobiliario/';" style="background-image: url('assets/img/banner/banner5.png');">
-
-			</div>
-
-			<div class="myslide active" onclick="window.location.href='./public/torre/';" style="background-image: url('assets/img/banner/banner6.png');">
-
-			</div>
-
-			</div>
-
-			<center>
-				<div class="dotsbox" id="dotsbox">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-					<span class="dot" onclick="currentSlide(4)"></span>
-					<span class="dot" onclick="currentSlide(5)"></span>
-					<span class="dot" onclick="currentSlide(6)"></span>
-				</div>
-			</center>
-		</section>
+			<section>
+				<div class="myslide active slide1" onclick="window.location.href='./public/Nosotros/';"></div>
+				<div class="myslide active slide2" onclick="window.location.href='./public/telcos/';"></div>
+				<div class="myslide active slide3" onclick="window.location.href='./public/electrico/';"></div>
+				<div class="myslide active slide4" onclick="window.location.href='./public/almacenaje/';"></div>
+				<div class="myslide active slide5" onclick="window.location.href='./public/mobiliario/';"></div>
+				<div class="myslide active slide6" onclick="window.location.href='./public/torre/';"></div>
+				<center>
+					<div class="dotsbox" id="dotsbox">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+						<span class="dot" onclick="currentSlide(6)"></span>
+					</div>
+				</center>
+			</section>
 
 		<!---Productos mas vendido Inicio-->
 		<section class="productos-mas-vendidos">
@@ -247,7 +248,7 @@
 
 		<!--Inico de Acerca-->
 		<section class="about-section">
-			<img src="./assets/img/banner/soldador2.png" class="imgfondo" alt="">
+			<img class="imgfondo" alt="">
 			<div class="content">
 				<h1>ACERCA DE NOSOTROS</h1>
 				<p>

@@ -134,11 +134,11 @@
           </ul>
           <!-- Barra de búsqueda actualizada -->
           <form class="search-form" action="./public/busqueda/" method="get">
-						<input type="search" name="query" placeholder="Buscar..." required>
-						<button class="btn-search" type="submit">
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</button>
-					</form>
+            <input type="search" name="query" placeholder="Buscar..." required>
+            <button class="btn-search" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
 
           <!--<i class="fas fa-shopping-cart" style="color: #fff; font-size: 25px; cursor: pointer;"></i>-->
           <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -159,104 +159,104 @@
         </p>
         <section id="SectoresLinea"><img src="./assets/img/sectores/divisor.png" alt="" class="SectoresLinea"></section>
 
-     
+
 
       </section>
       <!--Telecomunicaciones Fin-->
       <section class="sectores" id="telecom">
-          <div class="sector">
-            <img src="./assets/img/sectores/sector/telecomunicaciones.jpg" alt="Torre de telecomunicaciones" class="imagen">
-            <div class="contenido">
-              <h3 class="subtitulo">sector de telecomunicaciones </h3>
-              <p class="texto">
-                Nuestros productos y soluciones destacan por ser de alta calidad, esenciales
-                para garantizar que las redes funcionen de manera eficiente y confiable.
-              </p>
-              <p class="texto">
-                Desde estructuras robustas para torres de comunicaciones hasta componentes precisos
-                para equipos de transmisión, nuestra experiencia en metalmecánica asegura que cada
-                elemento esté diseñado para soportar las exigencias del entorno actual.
-              </p>
-              <center>
-                <a href="public/telcos/" class="VerProduct">
-                  <p>Ver Productos</p>
-                </a>
-              </center>
+        <div class="sector">
+          <img src="./assets/img/sectores/sector/telecomunicaciones.jpg" alt="Torre de telecomunicaciones" class="imagen">
+          <div class="contenido">
+            <h3 class="subtitulo">sector de telecomunicaciones </h3>
+            <p class="texto">
+              Nuestros productos y soluciones destacan por ser de alta calidad, esenciales
+              para garantizar que las redes funcionen de manera eficiente y confiable.
+            </p>
+            <p class="texto">
+              Desde estructuras robustas para torres de comunicaciones hasta componentes precisos
+              para equipos de transmisión, nuestra experiencia en metalmecánica asegura que cada
+              elemento esté diseñado para soportar las exigencias del entorno actual.
+            </p>
+            <center>
+              <a href="public/telcos/" class="VerProduct">
+                <p>Ver Productos</p>
+              </a>
+            </center>
 
-            </div>
           </div>
+        </div>
 
-          <a class="Media">
-            <p>ALGUNOS DE NUESTROS PRODUCTOS</p>
-          </a>
+        <a class="Media">
+          <p>ALGUNOS DE NUESTROS PRODUCTOS</p>
+        </a>
 
-          <section class="contenedor-imagenes swiper">
-            <div class="swiper-wrapper">
-              <div class="imagen-placeholder swiper-slide">
-                <img src="./assets/img/sectores/telcos/microdata.png" alt="Imagen 1">
-                <p>Micro-Datacenter</p>
-              </div>
-              <div class="imagen-placeholder swiper-slide">
-                <img src="./assets/img/sectores/telcos/rack.png" alt="Imagen 2">
-                <p>Rack</p>
-              </div>
-              <div class="imagen-placeholder swiper-slide">
-                <img src="./assets/img/sectores/telcos/gabinete.png" alt="Imagen 3">
-                <p>Gabinete de poste</p>
-              </div><!--
+        <section class="contenedor-imagenes swiper">
+          <div class="swiper-wrapper">
+            <div class="imagen-placeholder swiper-slide">
+              <img src="./assets/img/sectores/telcos/microdata.png" alt="Imagen 1">
+              <p>Micro-Datacenter</p>
+            </div>
+            <div class="imagen-placeholder swiper-slide">
+              <img src="./assets/img/sectores/telcos/rack.png" alt="Imagen 2">
+              <p>Rack</p>
+            </div>
+            <div class="imagen-placeholder swiper-slide">
+              <img src="./assets/img/sectores/telcos/gabinete.png" alt="Imagen 3">
+              <p>Gabinete de poste</p>
+            </div><!--
               <div class="imagen-placeholder swiper-slide">
                 <img src="img/gab1-2.png" alt="Imagen 4">
                 <p>Título 4</p>
               </div>
               -->
-            </div>
-
-            <div class="swiper-pagination"></div><br>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </section>
-
-          <div class="seccion-titulo">
-            <h2 class="title">UNA OPCIÓN INNOVADORA</h2>
-            <p class="description">
-              En Transformetal, fabricamos productos que aseguran tanto la eficiencia como la confiabilidad de las redes,
-              destacando las torres de comunicaciones y los equipos de transmisión. Nos mantenemos a la vanguardia a través de la incorporación
-              de técnicas avanzadas y soluciones innovadoras. Adaptamos nuestros productos a las nuevas demandas del sector de las telecomunicaciones,
-              lo cual garantiza la eficiencia.
-            </p>
-
-            <p class="description">
-              Además, nos preocupamos por el futuro y por eso, también implementamos prácticas sostenibles en cada una de las etapas de nuestra
-              producción. Transformetal, no sólo fabricamos productos de alta calidad, sino que también nos aseguramos de que nuestros procesos
-              construyan un entorno más verde.
-            </p>
           </div>
 
-          <section class="contenedor-beneficios">
-            <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
-
-            <div class="beneficio">
-              <div class="beneficio-icono"><img src="./assets/img/sectores/sector/lapiz.png" alt=""></div>
-              <div class="beneficio-titulo">SOLUCIONES INNOVADORAS</div>
-              <div class="beneficio-texto">Nuestros ingenieros y arquitectos de diseño trabajan con usted para crear el ideal desarrollo de productos para sus proyectos.</div>
-            </div>
-            <div class="beneficio">
-              <div class="beneficio-icono"><img src="./assets/img/sector/icono_bombilla.png" alt=""></div>
-              <div class="beneficio-titulo">OPERACIÓN Y LOGÍSTICA</div>
-              <div class="beneficio-texto">Fabricamos sus productos con una precisión excepcional y entregamos sus productos a tiempo.</div>
-            </div>
-            <div class="beneficio">
-              <div class="beneficio-icono"><img src="./assets/img/sectores/sector/T_3compromiso_ambiental.png" alt=""></div>
-              <div class="beneficio-titulo">COMPROMISO AMBIENTAL</div>
-              <div class="beneficio-texto">Implementamos prácticas sostenibles en nuestros procesos de producción, contribuyendo a un futuro más verde.</div>
-            </div>
-
-
-
-          </section>
-
-          <section class="linea-final"></section>
+          <div class="swiper-pagination"></div><br>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </section>
+
+        <div class="seccion-titulo">
+          <h2 class="title">UNA OPCIÓN INNOVADORA</h2>
+          <p class="description">
+            En Transformetal, fabricamos productos que aseguran tanto la eficiencia como la confiabilidad de las redes,
+            destacando las torres de comunicaciones y los equipos de transmisión. Nos mantenemos a la vanguardia a través de la incorporación
+            de técnicas avanzadas y soluciones innovadoras. Adaptamos nuestros productos a las nuevas demandas del sector de las telecomunicaciones,
+            lo cual garantiza la eficiencia.
+          </p>
+
+          <p class="description">
+            Además, nos preocupamos por el futuro y por eso, también implementamos prácticas sostenibles en cada una de las etapas de nuestra
+            producción. Transformetal, no sólo fabricamos productos de alta calidad, sino que también nos aseguramos de que nuestros procesos
+            construyan un entorno más verde.
+          </p>
+        </div>
+
+        <section class="contenedor-beneficios">
+          <h2 class="title">SERVICIOS DE VALOR AGREGADO </h2>
+
+          <div class="beneficio">
+            <div class="beneficio-icono"><img src="./assets/img/sectores/sector/lapiz.png" alt=""></div>
+            <div class="beneficio-titulo">SOLUCIONES INNOVADORAS</div>
+            <div class="beneficio-texto">Nuestros ingenieros y arquitectos de diseño trabajan con usted para crear el ideal desarrollo de productos para sus proyectos.</div>
+          </div>
+          <div class="beneficio">
+            <div class="beneficio-icono"><img src="./assets/img/sector/icono_bombilla.png" alt=""></div>
+            <div class="beneficio-titulo">OPERACIÓN Y LOGÍSTICA</div>
+            <div class="beneficio-texto">Fabricamos sus productos con una precisión excepcional y entregamos sus productos a tiempo.</div>
+          </div>
+          <div class="beneficio">
+            <div class="beneficio-icono"><img src="./assets/img/sectores/sector/T_3compromiso_ambiental.png" alt=""></div>
+            <div class="beneficio-titulo">COMPROMISO AMBIENTAL</div>
+            <div class="beneficio-texto">Implementamos prácticas sostenibles en nuestros procesos de producción, contribuyendo a un futuro más verde.</div>
+          </div>
+
+
+
+        </section>
+
+        <section class="linea-final"></section>
+      </section>
 
       <!--Electrica Inicio-->
       <section class="sectores" id="Electrico">
@@ -493,7 +493,7 @@
             -->
           </div>
 
-          <div class="swiper-pagination"></div><br>
+          <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </section>
@@ -519,7 +519,7 @@
             <div class="beneficio-texto">Ofrecemos una amplia gama de diseños adaptables a cualquier tipo de producto y espacio, asegurando que cada exhibición resalte lo mejor de su oferta.</div>
           </div>
           <div class="beneficio">
-            <div class="beneficio-icono"><img src="./assets/img/sectores/Exhibicion/icono_calidad_prueba.png"  alt=""></div>
+            <div class="beneficio-icono"><img src="./assets/img/sectores/Exhibicion/icono_calidad_prueba.png" alt=""></div>
             <div class="beneficio-titulo">CALIDAD</div>
             <div class="beneficio-texto">Nuestras estructuras están fabricadas con materiales de alta calidad, lo que garantiza que puedan soportar el uso del día a día.</div>
           </div>
@@ -565,55 +565,56 @@
       <div class="spinner"></div>
     </div>
     <footer class="footer-container">
-			<div class="footer-content">
-				<div class="footer-logo">
-					<img src="./assets/img/Logo_Azul.png" alt="Transformetal Logo">
-				</div>
-				<p class="footer-description">
-					Transformetal es una empresa líder en metalmecánica, especializada en la transformación y
-					fabricación de productos metálicos de alta calidad.
-				</p>
-				<div class="footer-icons">
-					<a href="https://www.facebook.com/people/Transformetal/61556439127740/?locale=es_LA" class="social-icon facebook" style=" background: url('./assets/img/icon/footer/fb.png') no-repeat center/cover;" target="_blank"></a>
-					<a href="https://api.whatsapp.com/send/?phone=50237673973&type=phone_number&app_absent=0" class="social-icon whatsapp" style=" background: url('./assets/img/icon/footer/wsp.png') no-repeat center/cover;" target="_blank"></a>
-					<a href="https://www.instagram.com/transformetalgt/" class="social-icon instagram" style=" background: url('./assets/img/icon/footer/ig.png') no-repeat center/cover;" target="_blank"></a>
-					<a href="https://www.youtube.com/@TransformetalGT" class="social-icon youtube" style=" background: url('./assets/img/icon/footer/yt.png') no-repeat center/cover;" target="_blank"></a>
-					<a href="tel:37673973" class="contact-icon phone">3767-3973 / 5695-2444</a>
-					<a href="mailto:contacto@transformetalgt.com" class="contact-icon email">contacto@transformetalgt.com</a>
-				</div>
-			</div>
-			<style>
-        .footer-container{
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./assets/img/Logo_Azul.png" alt="Transformetal Logo">
+        </div>
+        <p class="footer-description">
+          Transformetal es una empresa líder en metalmecánica, especializada en la transformación y
+          fabricación de productos metálicos de alta calidad.
+        </p>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/people/Transformetal/61556439127740/?locale=es_LA" class="social-icon facebook" style=" background: url('./assets/img/icon/footer/fb.png') no-repeat center/cover;" target="_blank"></a>
+          <a href="https://api.whatsapp.com/send/?phone=50237673973&type=phone_number&app_absent=0" class="social-icon whatsapp" style=" background: url('./assets/img/icon/footer/wsp.png') no-repeat center/cover;" target="_blank"></a>
+          <a href="https://www.instagram.com/transformetalgt/" class="social-icon instagram" style=" background: url('./assets/img/icon/footer/ig.png') no-repeat center/cover;" target="_blank"></a>
+          <a href="https://www.youtube.com/@TransformetalGT" class="social-icon youtube" style=" background: url('./assets/img/icon/footer/yt.png') no-repeat center/cover;" target="_blank"></a>
+          <a href="tel:37673973" class="contact-icon phone">3767-3973 / 5695-2444</a>
+          <a href="mailto:contacto@transformetalgt.com" class="contact-icon email">contacto@transformetalgt.com</a>
+        </div>
+      </div>
+      <style>
+        .footer-container {
           margin-top: -200px;
         }
-				.contact-icon.phone::before {
-					content: "";
-					display: inline-block;
-					width: 40px;
-					height: 40px;
-					background-image: url('./assets/img/icon/footer/cel.png');
-					background-size: cover;
-					margin-right: 5px;
-				}
 
-				.contact-icon.email::before {
-					content: "";
-					display: inline-block;
-					width: 40px;
-					height: 40px;
-					background-image: url('./assets/img/icon/footer/email.png');
-					background-size: cover;
-					margin-right: 5px;
-				}
-			</style>
-			<div class="footer-bottom">
-				<p>©Transformetal 2025. <a href="" class="privacy-link">Todos los derechos reservados</a></p>
-				<a href="#" class="privacy-link">Política de privacidad</a>
-			</div>
-		</footer>
+        .contact-icon.phone::before {
+          content: "";
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background-image: url('./assets/img/icon/footer/cel.png');
+          background-size: cover;
+          margin-right: 5px;
+        }
+
+        .contact-icon.email::before {
+          content: "";
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background-image: url('./assets/img/icon/footer/email.png');
+          background-size: cover;
+          margin-right: 5px;
+        }
+      </style>
+      <div class="footer-bottom">
+        <p>©Transformetal 2025. <a href="" class="privacy-link">Todos los derechos reservados</a></p>
+        <a href="#" class="privacy-link">Política de privacidad</a>
+      </div>
+    </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
     <script src="assets/js/menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
