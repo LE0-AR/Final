@@ -15,6 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/footer.css">
   <link rel="stylesheet" href="../../assets/css/styleNosotros.css" />
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
@@ -132,11 +136,11 @@
         </ul>
         <!-- Barra de búsqueda actualizada -->
         <form class="search-form" action="../busqueda/" method="get">
-						<input type="search" name="query" placeholder="Buscar..." required>
-						<button class="btn-search" type="submit">
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</button>
-					</form>
+          <input type="search" name="query" placeholder="Buscar..." required>
+          <button class="btn-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
         <!--<i class="fas fa-shopping-cart" style="color: #fff; font-size: 25px; cursor: pointer;"></i>-->
         <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
       </nav>
@@ -239,15 +243,46 @@
   <div id="loader">
     <div class="spinner"></div>
   </div>
+  <script>
+    let mySwiper;
+
+    function initSwiper() {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth <= 560 && !mySwiper) {
+        mySwiper = new Swiper('.swiper', {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        });
+      } else if (screenWidth > 560 && mySwiper) {
+        mySwiper.destroy(true, true);
+        mySwiper = undefined;
+      }
+    }
+
+    window.addEventListener('load', initSwiper);
+    window.addEventListener('resize', initSwiper);
+  </script>
 
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/9f5db648e8.js" crossorigin="anonymous"></script>
   <script src="../../assets/js/menu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="../../assets/js/popper.min.js"></script>
   <script src="../../assets/js/jquery-3.2.1.js"></script>
-  <script src="../../assets/js/select2.min.js"></script>  
+  <script src="../../assets/js/select2.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="../../assets/js/chat.js"></script>
 </body>

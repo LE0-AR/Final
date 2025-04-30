@@ -483,7 +483,7 @@ height: 144px;
 
 .myslide.active {
   display: block;
-  height: 700px;
+  height: 650px;
   background-size: cover;
   background-position: center;
 }

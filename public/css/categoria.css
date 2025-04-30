@@ -409,6 +409,7 @@ body {
   .productos {
     gap: 20px;
     padding: 15px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .producto img {
@@ -491,12 +492,13 @@ body {
 @media (max-width: 480px) {
   .productos-mas-vendidos {
     padding: 10px;
+    margin-top: 80px;
   }
 
   .productos {
-    grid-template-columns: 1fr;
-  }
 
+    grid-template-columns: repeat(2, 1fr);
+  }
   .Cinta {
     width: 90%;
     margin-left: -20%;

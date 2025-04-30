@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
 
   <head>
@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/footer.css">
   </head>
 
@@ -613,7 +615,42 @@
       </div>
     </footer>
 
-
+    <script>
+      const swiper = new Swiper('.swiper', {
+        effect: 'cards',
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        initialSlide: 1,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        }
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
     <script src="assets/js/menu.js"></script>
